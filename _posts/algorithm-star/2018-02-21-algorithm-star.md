@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "중첩 반복문(별찍기)"
-date:   2018-02-21 21:33:43 +0700
-categories: jekyll update
+title: 중첩 반복문(별찍기)
+date: 2018-02-21 21:33:43 +0700
+modified: 2018-02-21 21:33:43 +0700
+tag: [algorithm, javascript]
 ---
 
 중첩 반복문의 별찍기 예제이다. 알고리즘 기초 문제로 자주 등장하는 예제중 하나이다. 우선 하단의 별모양으로 찍어보자

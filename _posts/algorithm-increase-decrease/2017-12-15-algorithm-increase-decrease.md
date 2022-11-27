@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "인덱스 증가 감소"
-date:   2017-12-15 21:04:48 +0700
-categories: jekyll update
+title: 인덱스 증가 감소
+date: 2017-12-15 21:04:48 +0700
+modified: 2020-03-07 16:49:47 +07:00
+tag: [algorithm, javascript]
 ---
 
 슬라이드에서 이전 슬라이드, 다음 슬라이드 인덱스 값이 필요할 경우 쓰이는 방법이다. 슬라이드 갯수와 다음, 이전 인덱스 값을 초기 설정해준다.
