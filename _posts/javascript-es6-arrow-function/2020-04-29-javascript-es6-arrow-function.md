@@ -193,4 +193,3 @@ obj.getName();
 [JavaScript - 화살표 함수(Arrow function)](https://velog.io/@ki_blank/JavaScript-화살표-함수Arrow-function)  
 [Arrow Function(화살표 함수)이란? :: 마이구미](https://mygumi.tistory.com/229)  
 [ES6 화살표 함수(arrow function) 변경점 요약 (사용법, this등)](https://jeong-pro.tistory.com/110)
-
