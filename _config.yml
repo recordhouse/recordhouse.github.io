@@ -10,7 +10,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: FE.Log # author name
+  name: Seongju Kang # author name
   bio: >- # tell to the world
     Software Engineer
   username: Seongju Kang  # general username
