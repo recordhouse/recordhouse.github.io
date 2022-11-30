@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 재귀 함수(Recursive Function)
-date: 2017-12-16 21:13:28 +0700
-modified: 2017-12-16 21:13:28 +0700
+date: 2017-12-16 21:13:28
+modified: 2017-12-16 21:13:28
 tag: [javascript]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 함수형 프로그래밍의 순수 함수
-date: 2020-12-09 11:30:35 +0700
-modified: 2020-12-09 11:30:35 +0700
+date: 2020-12-09 11:30:35
+modified: 2020-12-09 11:30:35
 tag: [javascript, pure function, functional programming]
 ---
 

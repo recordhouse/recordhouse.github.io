@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ES5 Array.forEach
-date: 2020-02-16 18:46:41 +0700
-modified: 2020-02-16 18:46:41 +0700
+date: 2020-02-16 18:46:41
+modified: 2020-02-16 18:46:41
 tag: [javascript, es5]
 ---
 

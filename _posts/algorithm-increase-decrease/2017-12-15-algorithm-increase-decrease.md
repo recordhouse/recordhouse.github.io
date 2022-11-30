@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 인덱스 증가 감소
-date: 2017-12-15 21:04:48 +0700
-modified: 2020-03-07 16:49:47 +07:00
+date: 2017-12-15 21:04:48
+modified: 2020-03-07 16:49:47
 tag: [algorithm, javascript]
 ---
 

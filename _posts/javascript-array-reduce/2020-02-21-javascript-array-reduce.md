@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ES5 Array.reduce
-date: 2020-02-21 18:57:42 +0700
-modified: 2020-02-21 18:57:42 +0700
+date: 2020-02-21 18:57:42
+modified: 2020-02-21 18:57:42
 tag: [javascript, es5]
 ---
 

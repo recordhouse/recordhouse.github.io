@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 정규표현식
-date: 2018-03-02 21:41:31 +0700
-modified: 2018-03-02 21:41:31 +0700
+date: 2018-03-02 21:41:31
+modified: 2018-03-02 21:41:31
 tag: [javascript, regexp]
 ---
 

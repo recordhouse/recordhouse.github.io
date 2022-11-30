@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 깃허브 블로그(Jekyll) SEO 세팅
-date: 2019-12-01 10:15:25 +0700
-modified: 2019-12-01 10:15:25 +0700
+date: 2019-12-01 10:15:25
+modified: 2019-12-01 10:15:25
 tag: [github, jekyll, seo]
 ---
 

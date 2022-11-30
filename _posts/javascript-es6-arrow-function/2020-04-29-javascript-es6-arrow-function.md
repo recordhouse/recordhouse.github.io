@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 화살표 함수(Arrow Function)
-date: 2020-04-29 20:13:36 +0700
-modified: 2020-04-29 20:13:36 +0700
+date: 2020-04-29 20:13:36
+modified: 2020-04-29 20:13:36
 tag: [javascript, es6]
 ---
 

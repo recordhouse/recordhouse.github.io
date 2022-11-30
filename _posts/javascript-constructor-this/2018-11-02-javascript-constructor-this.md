@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 생성자 함수에서의 This
-date: 2018-11-02 22:04:56 +0700
-modified: 2018-11-02 22:04:56 +0700
+date: 2018-11-02 22:04:56
+modified: 2018-11-02 22:04:56
 tag: [javascript]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 비구조화 할당(Destructuring Assignment)
-date: 2020-04-30 20:51:12 +0700
-modified: 2020-04-30 20:51:12 +0700
+date: 2020-04-30 20:51:12
+modified: 2020-04-30 20:51:12
 tag: [javascript, es6]
 ---
 

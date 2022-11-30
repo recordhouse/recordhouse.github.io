@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 크롬으로 디버깅하기
-date: 2020-01-29 10:58:03 +0700
-modified: 2020-01-29 10:58:03 +0700
+date: 2020-01-29 10:58:03
+modified: 2020-01-29 10:58:03
 tag: [chrome, javascript, debug]
 ---
 

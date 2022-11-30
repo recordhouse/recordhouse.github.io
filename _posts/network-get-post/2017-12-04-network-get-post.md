@@ -1,8 +1,8 @@
 ---
 layout: post
 title: GET과 POST 차이
-date: 2017-12-04 19:16:03 +0700
-modified: 2017-12-04 19:16:03 +0700
+date: 2017-12-04 19:16:03
+modified: 2017-12-04 19:16:03
 tag: [mac, terminal]
 ---
 

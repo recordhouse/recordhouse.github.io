@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 자바스크립트 This
-date: 2018-11-01 22:03:02 +0700
-modified: 2018-11-01 22:03:02 +0700
+date: 2018-11-01 22:03:02
+modified: 2018-11-01 22:03:02
 tag: [javascript]
 ---
 

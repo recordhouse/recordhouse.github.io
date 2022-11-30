@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 날짜 구하기(Data 함수)
-date: 2017-12-13 20:48:10 +0700
-modified: 2017-12-13 20:48:10 +0700
+date: 2017-12-13 20:48:10
+modified: 2017-12-13 20:48:10
 tag: [javascript]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 함수 메서드(call, apply, bind)
-date: 2018-11-08 08:11:18 +0700
-modified: 2018-11-08 08:11:18 +0700
+date: 2018-11-08 08:11:18
+modified: 2018-11-08 08:11:18
 tag: [javascript]
 ---
 

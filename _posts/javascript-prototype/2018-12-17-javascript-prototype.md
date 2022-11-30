@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 프로토타입(Prototype)
-date: 2018-12-17 08:16:45 +0700
-modified: 2018-12-17 08:16:45 +0700
+date: 2018-12-17 08:16:45
+modified: 2018-12-17 08:16:45
 tag: [javascript]
 ---
 

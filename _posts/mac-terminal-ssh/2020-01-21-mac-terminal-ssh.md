@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 맥 터미널 쉘 접속
-date: 2020-01-21 10:55:53 +0700
-modified: 2020-01-21 10:55:53 +0700
+date: 2020-01-21 10:55:53
+modified: 2020-01-21 10:55:53
 tag: [mac, terminal]
 ---
 

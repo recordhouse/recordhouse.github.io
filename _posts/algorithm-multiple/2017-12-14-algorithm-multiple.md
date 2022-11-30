@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 배수 구하기
-date: 2017-12-14 21:03:09 +0700
-modified: 2017-12-14 21:03:09 +07:00
+date: 2017-12-14 21:03:09
+modified: 2017-12-14 21:03:09
 tag: [algorithm, javascript]
 ---
 

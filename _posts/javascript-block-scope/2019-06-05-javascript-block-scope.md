@@ -1,8 +1,8 @@
 ---
 layout: post
 title: var, let, const 차이
-date: 2019-06-05 08:12:48 +0700
-modified: 2019-06-05 08:12:48 +0700
+date: 2019-06-05 08:12:48
+modified: 2019-06-05 08:12:48
 tag: [javascript]
 ---
 

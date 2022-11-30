@@ -1,8 +1,8 @@
 ---
 layout: post
 title: CentOS7 영카트 설치 및 초기 세팅
-date: 2019-12-10 10:33:20 +0700
-modified: 2019-12-10 10:33:20 +0700
+date: 2019-12-10 10:33:20
+modified: 2019-12-10 10:33:20
 tag: [linux, centos, nginx, youngcart5]
 ---
 

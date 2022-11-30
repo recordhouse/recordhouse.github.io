@@ -1,8 +1,8 @@
 ---
 layout: post
 title: try...catch를 이용한 에러 핸들링
-date: 2020-12-01 15:35:46 +0700
-modified: 2020-12-01 15:35:46 +0700
+date: 2020-12-01 15:35:46
+modified: 2020-12-01 15:35:46
 tag: [javascript]
 ---
 

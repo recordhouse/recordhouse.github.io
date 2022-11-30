@@ -1,8 +1,8 @@
 ---
 layout: post
 title: IOS 스크롤 방지
-date: 2018-06-11 21:51:16 +0700
-modified: 2018-06-11 21:51:16 +0700
+date: 2018-06-11 21:51:16
+modified: 2018-06-11 21:51:16
 tag: [jquey, javascript]
 ---
 

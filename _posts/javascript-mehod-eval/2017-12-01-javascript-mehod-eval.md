@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 자바스크립트 eval 함수
-date: 2017-12-01 18:36:04 +0700
-modified: 2017-12-01 18:36:04 +0700
+date: 2017-12-01 18:36:04
+modified: 2017-12-01 18:36:04
 tag: [javascript]
 ---
 

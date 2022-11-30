@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ES6 클래스(Class)
-date: 2020-03-04 19:53:03 +0700
-modified: 2020-03-04 19:53:03 +0700
+date: 2020-03-04 19:53:03
+modified: 2020-03-04 19:53:03
 tag: [javascript, es6]
 ---
 

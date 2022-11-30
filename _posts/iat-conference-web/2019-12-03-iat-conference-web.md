@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 웹 접근성 정의 및 대비 방법
-date: 2019-12-03 10:21:08 +0700
-modified: 2019-12-03 10:21:08 +0700
+date: 2019-12-03 10:21:08
+modified: 2019-12-03 10:21:08
 tag: [html, web accessibility]
 ---
 

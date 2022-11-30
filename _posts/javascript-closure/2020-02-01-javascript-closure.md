@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 자바스크립트 클로저
-date: 2020-02-01 11:41:10 +0700
-modified: 2020-02-01 11:41:10 +0700
+date: 2020-02-01 11:41:10
+modified: 2020-02-01 11:41:10
 tag: [javascript, closure]
 ---
 

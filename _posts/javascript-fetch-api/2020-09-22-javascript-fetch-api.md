@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Fetch API
-date: 2020-09-22 17:10:56 +0700
-modified: 2020-09-22 17:10:56 +0700
+date: 2020-09-22 17:10:56
+modified: 2020-09-22 17:10:56
 tag: [http, javascript]
 ---
 

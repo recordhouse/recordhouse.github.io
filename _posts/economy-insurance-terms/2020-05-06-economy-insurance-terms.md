@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 보험 상품 개발 프로세스 및 보험 용어
-date: 2020-05-06 13:37:46 +0700
-modified: 2020-05-06 13:37:46 +0700
+date: 2020-05-06 13:37:46
+modified: 2020-05-06 13:37:46
 tag: [economy, insurance]
 ---
 

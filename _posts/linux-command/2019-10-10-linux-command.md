@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 리눅스 명령어
-date: 2019-10-10 09:28:27 +0700
-modified: 2019-10-10 09:28:27 +0700
+date: 2019-10-10 09:28:27
+modified: 2019-10-10 09:28:27
 tag: [linux, command]
 ---
 

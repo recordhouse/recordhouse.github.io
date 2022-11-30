@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Async/Await를 이용한 비동기 처리
-date: 2020-11-20 16:07:51 +0700
-modified: 2020-11-20 16:07:51 +0700
+date: 2020-11-20 16:07:51
+modified: 2020-11-20 16:07:51
 tag: [javascript, es8]
 ---
 

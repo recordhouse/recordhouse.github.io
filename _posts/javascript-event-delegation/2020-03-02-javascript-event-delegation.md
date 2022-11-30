@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 이벤트 위임(Event Delegation)
-date: 2020-03-02 19:05:42 +0700
-modified: 2020-03-02 19:05:42 +0700
+date: 2020-03-02 19:05:42
+modified: 2020-03-02 19:05:42
 tag: [javascript]
 ---
 

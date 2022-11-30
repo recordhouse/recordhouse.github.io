@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ESLint, Prettier 적용하기
-date: 2020-07-06 19:54:44 +0700
-modified: 2020-07-06 19:54:44 +0700
+date: 2020-07-06 19:54:44
+modified: 2020-07-06 19:54:44
 tag: [eslint, prettier, tools, module, extension]
 ---
 

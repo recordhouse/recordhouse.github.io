@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 입력 서식 관련 접근성
-date: 2019-12-04 10:24:31 +0700
-modified: 2019-12-04 10:24:31 +0700
+date: 2019-12-04 10:24:31
+modified: 2019-12-04 10:24:31
 tag: [html, web accessibility]
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 바닐라 자바스크립트로 인덱스 구하기
-date: 2018-01-15 21:28:59 +0700
-modified: 2018-01-15 21:28:59 +0700
+date: 2018-01-15 21:28:59
+modified: 2018-01-15 21:28:59
 tag: [javascript, vanillajs]
 ---
 

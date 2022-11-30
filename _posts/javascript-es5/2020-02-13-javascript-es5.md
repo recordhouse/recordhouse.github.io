@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ES5(ECMAScript 5)
-date: 2020-02-13 15:12:44 +0700
-modified: 2020-02-13 15:12:44 +0700
+date: 2020-02-13 15:12:44
+modified: 2020-02-13 15:12:44
 tag: [javascript, es5]
 ---
 

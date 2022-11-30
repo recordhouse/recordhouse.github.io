@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 깃 명령어
-date: 2019-10-01 09:11:43 +0700
-modified: 2019-10-01 09:11:43 +0700
+date: 2019-10-01 09:11:43
+modified: 2019-10-01 09:11:43
 tag: [git, command]
 ---
 

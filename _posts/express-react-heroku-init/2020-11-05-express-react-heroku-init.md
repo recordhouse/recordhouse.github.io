@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Express + React 연동 및 Heroku에 배포하기
-date: 2020-11-05 09:55:22 +0700
-modified: 2020-11-05 09:55:22 +0700
+date: 2020-11-05 09:55:22
+modified: 2020-11-05 09:55:22
 tag: [express, react, heroku]
 ---
 

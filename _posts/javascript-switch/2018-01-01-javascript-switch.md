@@ -1,8 +1,8 @@
 ---
 layout: post
 title: switch 조건문
-date: 2018-01-01 21:14:49 +0700
-modified: 2018-01-01 21:14:49 +0700
+date: 2018-01-01 21:14:49
+modified: 2018-01-01 21:14:49
 tag: [javascript]
 ---
 

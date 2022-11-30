@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ES5 Array.map
-date: 2020-02-17 18:49:45 +0700
-modified: 2020-02-17 18:49:45 +0700
+date: 2020-02-17 18:49:45
+modified: 2020-02-17 18:49:45
 tag: [javascript, es5]
 ---
 

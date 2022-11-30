@@ -1,8 +1,8 @@
 ---
 layout: post
 title: CentOS7 깃 설치 및 로컬 세팅
-date: 2019-12-11 10:39:26 +0700
-modified: 2019-12-11 10:39:26 +0700
+date: 2019-12-11 10:39:26
+modified: 2019-12-11 10:39:26
 tag: [linux, centos, git, youngcart5]
 ---
 

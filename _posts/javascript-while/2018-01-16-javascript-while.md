@@ -1,8 +1,8 @@
 ---
 layout: post
 title: while 반복문
-date: 2018-01-16 21:20:27 +0700
-modified: 2018-01-16 21:20:27 +0700
+date: 2018-01-16 21:20:27
+modified: 2018-01-16 21:20:27
 tag: [javascript]
 ---
 

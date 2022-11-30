@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 스코프(Scope)
-date: 2017-12-02 19:14:45 +0700
-modified: 2017-12-02 19:14:45 +0700
+date: 2017-12-02 19:14:45
+modified: 2017-12-02 19:14:45
 tag: [javascript]
 ---
 

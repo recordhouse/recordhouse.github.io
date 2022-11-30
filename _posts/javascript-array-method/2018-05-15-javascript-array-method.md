@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 배열 메서드
-date: 2018-05-15 21:49:54 +0700
-modified: 2018-05-15 21:49:54 +0700
+date: 2018-05-15 21:49:54
+modified: 2018-05-15 21:49:54
 tag: [javascript]
 ---
 

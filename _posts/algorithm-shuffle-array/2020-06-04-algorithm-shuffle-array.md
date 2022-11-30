@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 랜덤 배열(Shuffle)
-date: 2020-06-04 13:18:39 +0700
-modified: 2020-06-04 13:18:39 +07:00
+date: 2020-06-04 13:18:39
+modified: 2020-06-04 13:18:39
 tag: [algorithm, javascript]
 ---
 

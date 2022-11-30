@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 전개연산자(Spread Operator)
-date: 2020-04-29 20:09:38 +0700
-modified: 2020-04-29 20:09:38 +0700
+date: 2020-04-29 20:09:38
+modified: 2020-04-29 20:09:38
 tag: [javascript, es6]
 ---
 
