@@ -34,10 +34,10 @@ fatal: unable to access 'https://github.com/bitnaleeeee/bitnaleeeee.github.io.gi
 
 ## 자격 증명 변경 과정
 #### 1. 제어판 > 사용자 계정
-![순서01](./img01.png)
+![순서01](/git-account-change/img01.png)
 
 #### 2. 제어판 > 사용자 계정 > 자격 증명 관리자
-![순서02](./img02.png)
+![순서02](/git-account-change/img02.png)
 
 #### 2. 자격 증명 관리자 > Windows 자격 증명 > 일반 자격 증명 > git:https://github.com 제거
 ![순서03](./img03.png)
