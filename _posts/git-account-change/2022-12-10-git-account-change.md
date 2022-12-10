@@ -4,6 +4,7 @@ title: Git 터미널 계정 변경 방법(Windows)
 date: 2022-12-09 13:20:01
 modified: 2022-12-09 13:20:01
 tag: [git, windows]
+image: /git-account-change/img01.png
 ---
 
 # 1. 현재 깃에 설정된 계정/메일 확인
@@ -35,8 +36,6 @@ fatal: unable to access 'https://github.com/bitnaleeeee/bitnaleeeee.github.io.gi
 ## 자격 증명 변경 과정
 #### 1. 제어판 > 사용자 계정
 ![순서01](/git-account-change/img01.png)
-
-<img src="/git-account-change/img01.png" />
 
 #### 2. 제어판 > 사용자 계정 > 자격 증명 관리자
 ![순서02](/git-account-change/img02.png)
