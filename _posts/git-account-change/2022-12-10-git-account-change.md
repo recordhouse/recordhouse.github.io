@@ -36,6 +36,8 @@ fatal: unable to access 'https://github.com/bitnaleeeee/bitnaleeeee.github.io.gi
 #### 1. 제어판 > 사용자 계정
 ![순서01](/git-account-change/img01.png)
 
+<img src="/git-account-change/img01.png" />
+
 #### 2. 제어판 > 사용자 계정 > 자격 증명 관리자
 ![순서02](/git-account-change/img02.png)
 
