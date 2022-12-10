@@ -37,7 +37,7 @@ fatal: unable to access 'https://github.com/bitnaleeeee/bitnaleeeee.github.io.gi
 ![순서01](/assets/img/posts/git-account-change-img01.png)
 
 #### 2. 제어판 > 사용자 계정 > 자격 증명 관리자
-![순서02]((/assets/img/posts/git-account-change-img03.png)
+![순서02](/assets/img/posts/git-account-change-img03.png)
 
 #### 2. 자격 증명 관리자 > Windows 자격 증명 > 일반 자격 증명 > git:https://github.com 제거
 ![순서03](/assets/img/posts/git-account-change-img04.png)
