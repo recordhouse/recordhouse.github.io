@@ -4,7 +4,7 @@ title: Git 터미널 계정 변경 방법(Windows)
 date: 2022-12-09 13:20:01
 modified: 2022-12-09 13:20:01
 tag: [git, windows]
-image: /git-account-change/img01.png
+image: "/git-account-change/img01.png"
 ---
 
 # 1. 현재 깃에 설정된 계정/메일 확인
