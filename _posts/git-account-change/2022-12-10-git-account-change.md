@@ -4,6 +4,7 @@ title: Git 터미널 계정 변경 방법(Windows)
 date: 2022-12-09 13:20:01
 modified: 2022-12-09 13:20:01
 tag: [git, windows]
+image: "/git-account-change/img01.png"
 ---
 
 # 1. 현재 깃에 설정된 계정/메일 확인
@@ -40,23 +41,23 @@ fatal: unable to access 'https://github.com/bitnaleeeee/bitnaleeeee.github.io.gi
 ![순서02](/git-account-change/img02.png)
 
 #### 2. 자격 증명 관리자 > Windows 자격 증명 > 일반 자격 증명 > git:https://github.com 제거
-![순서03](./img03.png)
+![순서03](/git-account-change/img03.png)
 
 #### 4. 자격 증명 관리자 > Windows 자격 증명 > 일반 자격 증명 > 일반 자격 증명 추가
-![순서04](./img04.png)
+![순서04](/git-account-change/img04.png)
 
 #### 5. 일반 자격 증명 추가 > 정보 입력하고 확인
-![순서05](./img05.png)  
+![순서05](/git-account-change/img05.png)  
 
 1. 인터넷 또는 네트워크 주소: `https://api.github.com/변경할 계정`
 2. 사용자 이름: `변경할 계정`
 3. 암호: `변경할 계정 암호`
 
 #### 6. 깃허브 인증 팝업 출력 > `Sign in with your browser` 클릭
-![순서06](./img06.png)
+![순서06](/git-account-change/img06.png)
 
 #### 7. 깃허브 인증 팝업 출력 > `Authorize GitCredentialManager` 클릭하면 인증 성공
-![순서07](./img07.png)
+![순서07](/git-account-change/img07.png)
 
 #### 8. 다시 Git Push 제대로 되는지 확인
 
