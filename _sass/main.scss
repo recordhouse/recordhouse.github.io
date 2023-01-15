@@ -48,20 +48,6 @@ $on-tablet: 769px;
 $on-desktop: 1024px;
 $on-widescreen: 1152px;
 
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
-
-// Import sass files
-@import "klise/fonts", "klise/base", "klise/layout", "klise/post",
-  "klise/miscellaneous", "klise/syntax", "klise/dark";
-
 // Scroll Bar
 html::-webkit-scrollbar {
   width: 8px;
@@ -76,3 +62,17 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import sass files
+@import "klise/fonts", "klise/base", "klise/layout", "klise/post",
+  "klise/miscellaneous", "klise/syntax", "klise/dark";
