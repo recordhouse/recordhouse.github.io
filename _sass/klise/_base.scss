@@ -17,7 +17,7 @@
 
 html {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   width: 100%;
 }
 
@@ -367,4 +367,19 @@ mark,
       border: 0;
     }
   }
+}
+
+// Scroll Bar
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
 }
