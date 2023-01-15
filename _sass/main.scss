@@ -61,3 +61,18 @@ $on-widescreen: 1152px;
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
   "klise/miscellaneous", "klise/syntax", "klise/dark";
+
+// Scroll Bar
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  height: 20%;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
