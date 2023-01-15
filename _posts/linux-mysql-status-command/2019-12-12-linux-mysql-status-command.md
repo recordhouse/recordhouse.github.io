@@ -15,5 +15,5 @@ tag: [linux, mysql]
 | 재시작 | # service mysql restart | # service mysqld restart | # systemctl restart mysqld |
 | 상태확인 | # service mysql status | # service mysqld status | # systemctl status mysqld |
 
-## References
+# References
 [리눅스 MySQL 시작, 정지, 재시작, 상태확인](http://blog.naver.com/PostView.nhn?blogId=hailey_jo&logNo=221371629870&parentCategoryNo=&categoryNo=8&viewDate=&isShowPopularPosts=true&from=search)
