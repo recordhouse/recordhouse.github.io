@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 리액트 데이터 관리(Props, State)
+title: "[React] 리액트 데이터 관리(Props, State)"
 date: 2020-03-08 19:59:22
 modified: 2020-03-08 19:59:22
 tag: [react, javascript, state, props]
 ---
 
+# 정의
 리액트에서 다루는 데이터는 두개로 나뉜다. 바로 props와 state인데, 요약하자면 props는 부모 컴포넌트가 자식 컴포넌트에게 주는 값이다. 자식 컴포넌트에서는 props를 받아오기만 하고, 받아온 props를 직접 수정할 수는 없다. 자식 입장에서 읽기 전용인 데이터이다. 반면에 state는 컴포넌트 내부에서 선언하며, 내부에서 값을 변경할 수 있다. 자신이 들고있는 값이며 props와 비교한다면, 쓰기 전용이라고 볼 수 있다.
 
-## props
+# props
 예제를 통해 props과 state를 알아보겠다. `src`디렉토리에 `components`디렉토리를 생성한 뒤 컴포넌트를 `MyNmae.js`파일을 만든 후 `MyName`컴포넌트를 추가하도록 하겠다.
 
 ```javascript
@@ -46,7 +47,7 @@ export default App;
 
 화면에 this is my-app라고 출력되는 것을 확인할 수 있다. `MyName`컴포넌트는 부모 컴포넌트인 `App`컴포넌트안의 `MyName`에서 선언한 `name`값을 `this.props.name`구문을 이용하여 값을 가져오고 있다.
 
-### defaultProps
+## defaultProps
 특정한 상황에 props를 일부러 비워야 할 때가 있다. 그러한 경우에 props의 기본 값을 설정해 줄 수 있는데, 그것이 defaultProps이다.
 
 ```javascript
@@ -85,7 +86,7 @@ class App extends Component {
 export default App;
 ```
 
-## state
+# state
 state는 위에서 쓰기 전용이라고 말한 것처럼 동적인 데이터를 다룰 때 사용된다. `Counter`라는 새로운 컴포넌트를 만들어 대략적으로 데이터를 어떻게 다루는지 알아보겠다.
 
 ```javascript
@@ -145,7 +146,7 @@ class Counter extends Component {
 }
 ```
 
-## 컴포넌트에서 메서드 작성
+# 컴포넌트에서 메서드 작성
 컴포넌트에서 메서드를 작성할 때 아래와 같이 화살표 함수로 작성된 것을 확인할 수 있다.
 
 ```javascript
@@ -178,10 +179,10 @@ constructor(props) {
 }
 ```
 
-## 값 업데이트(setState)
+# 값 업데이트(setState)
 각 메서드에 들어있는 `this.setState`는 `state`값을 바꾸기 위해서 받드시 사용해야 하는데, 리액트에서는 이 함수가 호출되면 컴포넌트가 리렌더링 되도록 설계되어 있기 때문이다. `setState`의 몇가지 특징을 알아보겠다.
 
-### setState는, 객체로 전달되는 값만 업데이트를 해준다.
+## setState는, 객체로 전달되는 값만 업데이트를 해준다.
 지금은 state에 number값만 있지만 만약 다음과 같은 값이 있다고 가정을 해본다.
 
 ```javascript
@@ -193,7 +194,7 @@ state = {
 
 이벤트에 `this.setState({ number: 1 });`을 전달해주면, foo는 그대로 남고, number값만 업데이트가 된다.
 
-### setState는 객체의 깊숙한곳 까지 확인하지 못한다.
+## setState는 객체의 깊숙한곳 까지 확인하지 못한다.
 예를 들어, state가 다음과 같이 설정되어 있다고 보자
 
 ```javascript
@@ -242,7 +243,7 @@ this.setState({
 
 위 구문중 `...`는 [전개연산자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax)이다. 기존의 객체안에 있는 내용을 해당 위치에 풀어준다는 의미다. 그 다음에 설정하고 싶은 값을 넣어주면 해당 값을 덮어 쓰게 된다.
 
-### setState에 객체 대신 함수 전달하기
+## setState에 객체 대신 함수 전달하기
 setState로 값을 업데이트 할 때, 기존은 객체를 전달하여 값을 업데이트한다면 함수를 전달하는 방법도 있다. 기존 코드는 아래와 같다.
 
 ```javascript
@@ -285,7 +286,7 @@ this.setState({
 })
 ```
 
-## 이벤트 설정
+# 이벤트 설정
 `render`함수에서 이벤트 설정한 부분을 확인해 보겠다.
 
 ```javascript
@@ -316,7 +317,7 @@ render() {
 * 이벤트 이름을 설정할 때는 camelCase로 설정해주어야 한다. 예를들어 `onclick`은 `onClick`으로 설정 한다.
 * 이벤트에 전달되는 값은 함수여야 한다. 주의사항이 있는데 함수를 `onClick={this.handleIncrease()}`라고 함수 호출식으로 작성하게 된다면 렌더링 할 때 마다 해당 함수가 호출되어 무한반복이 되버린다. 렌더링 함수에서 이벤트를 설정할 때는 꼭 메서드를 호출하지 말도록 한다.
 
-## 결과 화면
+# 결과 화면
 
 `App.js`파일도 아래처럼 수정해 준다.
 
@@ -337,7 +338,6 @@ export default App;
 
 이제 `+`, `-`버튼을 클릭해보면 값이 정상적으로 증가, 감소하는 것을 확인할 수 있다. 
 
-## References
+# References
 [누구든지 하는 리액트 4편: props 와 state](https://velopert.com/3629)  
 [React 기억법(4) - React 필수요소 props, state](https://trustyoo86.github.io/react/2017/11/18/props-state-react.html)
-

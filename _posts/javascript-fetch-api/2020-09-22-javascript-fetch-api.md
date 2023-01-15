@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fetch API
+title: "[JavaScript] Fetch API"
 date: 2020-09-22 17:10:56
 modified: 2020-09-22 17:10:56
 tag: [http, javascript]
@@ -8,7 +8,7 @@ tag: [http, javascript]
 
 자바스크립트의 fetch 함수는 비동기 통신 API로써 서버에 네트워크 요청을 보내 새로운 정보를 받아올 수 있다. ES6부터 지원하며, 가독성이 매우 뛰어난 장점이 있다. [이곳](https://recordboy.github.io/ui/dummy/data.json)을 클릭하면 `{"message": "hello world"}`라는 JSON 데이터 화면이 나온다. fetch API를 이용해 이 JSON을 가져와 보자.
 
-## 기본 형태
+# 기본 형태
 fetch API의 기본 형태는 아래와 같다.
 
 ```javascript
@@ -37,7 +37,7 @@ fetch(url, [options])
 
 [위에서 언급한 주소](https://recordboy.github.io/ui/dummy/data.json)를 입력하여 JSON 데이터를 잘 가져오는지 확인해 본다.
 
-## 요청 하기
+# 요청 하기
 ```javascript
 fetch('https://recordboy.github.io/ui/dummy/data.json')
   .then(function(res) {
@@ -59,8 +59,7 @@ fetch('https://recordboy.github.io/ui/dummy/data.json')
 * 첫번째 `then`의 응답값을 JSON 형태로 얻기 위해 `Response Object`의 `json()` 함수를 호출하여 값을 리턴한다.  
 * 두번째 `then`에서 응답 받은 JSON을 확인할 수 있다.
 
-## References
+# References
 [fetch](https://ko.javascript.info/fetch)  
 [fetch() 함수 사용법](https://yeri-kim.github.io/posts/fetch/#fetch-함수-기본)  
 [Javascript에서의 비동기 통신](https://m.blog.naver.com/dndlab/221783285664)
-

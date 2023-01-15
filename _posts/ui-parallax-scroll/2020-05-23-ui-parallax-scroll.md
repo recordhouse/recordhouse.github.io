@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vanilla JS로 패럴랙스 적용하기
+title: "[UI] Vanilla JS로 패럴랙스 적용하기"
 date: 2020-05-23 13:37:06
 modified: 2020-05-23 13:37:06
 tag: [ui, vanillajs]

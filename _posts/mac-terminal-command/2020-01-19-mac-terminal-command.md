@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 맥 터미널 명령어
+title: "[Terminal] 맥 터미널 명령어"
 date: 2020-01-19 10:54:21
 modified: 2020-01-19 10:54:21
 tag: [mac, terminal, command]

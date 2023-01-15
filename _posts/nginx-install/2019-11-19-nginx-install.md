@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Nginx 기본 세팅
+title: "[Nginx] Nginx 기본 세팅"
 date: 2019-11-19 10:13:02
 modified: 2019-11-19 10:13:02
 tag: [nginx, linux]
 ---
 
 # Nginx 설치
-
 ```
 # rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 # rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
@@ -17,7 +16,6 @@ tag: [nginx, linux]
 ```
 
 # PHP 설치
-
 ```
 # yum install yum-plugin-replace
 # yum install mod_php71w php71w-common

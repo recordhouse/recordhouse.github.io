@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바스크립트 싱글톤 패턴
+title: "[JavaScript] 자바스크립트 싱글톤 패턴"
 date: 2020-02-04 11:42:45
 modified: 2020-02-04 11:42:45
 tag: [javascript]
@@ -67,10 +67,11 @@ var singleton2 = singleton.getInstance();
 console.log(singleton1 === singleton2); // true
 ```
 
-위 코드는 비공개 메서드인 init()의 return문에서 객체 리터럴로 정의되는 인스턴스가 싱글톤 객체이며, 전체 시스템에서 하나만 존재하게 된다. 순서대로 보면 익명함수의 return문에는 싱글톤 객체를 구하는 공개 메서드(getInstance)를 포함한 객체를 반환하며, getInstance메서드는 instance값을 확인해 인스턴스가 선언이 안되있는 경우 비공개 메서드인 init를 호출하여 singleton인스턴스를 생성하여 instance에 할당하게 된다. 이렇게 일반적으로 싱글톤 패턴에서는 이미 객체가 생성되었는지 여부를 알려주는 instance와 같은 내부 변수가 필요하다. 그리고 싱글톤 패턴에서는 내부 변수에 접근할 수 있는 객체를 반환하는 클로저를 이용해야 한다.
+위 코드는 비공개 메서드인 init()의 return문에서 객체 리터럴로 정의되는 인스턴스가 싱글톤 객체이며, 전체 시스템에서 하나만 존재하게 된다. 순서대로 보면 익명함수의 return문에는 싱글톤 객체를 구하는 공개 메서드(getInstance)를 포함한 객체를 반환하며, getInstance메서드는 instance값을 확인해 인스턴스가 선언이 안되있는 경우 비공개 메서드인 init를 호출하여 singleton인스턴스를 생성하여 instance에 할당하게 된다.  
+
+이렇게 일반적으로 싱글톤 패턴에서는 이미 객체가 생성되었는지 여부를 알려주는 instance와 같은 내부 변수가 필요하다. 그리고 싱글톤 패턴에서는 내부 변수에 접근할 수 있는 객체를 반환하는 클로저를 이용해야 한다.  
 
 정리를 하면 내부의 getInstance메서드에서 비공개 프로퍼티인 instance에 접근할 수 있다는 것과, getInstance메서드의 호출이 끝나더라도 instance의 값은 계속 유지되는 특성(클로저)를 이용해 prop, method()이 포함된 객체를 유일하게 생성하게 된다. 그래서 singleton.getInstance()를 몇번이나 호출하더라도 얻는 객체는 모두 동일한 싱글톤 객체를 가리키게 된다.
 
-## References
+# References
 [싱글톤(singleton) 패턴](https://webclub.tistory.com/150)
-

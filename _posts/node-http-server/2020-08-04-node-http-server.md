@@ -1,6 +1,6 @@
 ---
 layout: post
-title: http 서버 만들기
+title: "[Node.js] http 서버 만들기"
 date: 2020-08-04 10:15:25
 modified: 2020-08-04 10:15:25
 tag: [node.js]
@@ -8,14 +8,13 @@ tag: [node.js]
 
 # http 서버 만들기
 
-Node.js 환경에서 간단한 http 서버를 만들어 보자.
+Node.js 환경에서 간단한 http 서버를 만들어 보자.  
 
-> Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임(특정 언어로 만든 프로그램들을 실행할 수 있는 환경)이다. 기존의 자바스크립트는 웹 브라우저에서만 실행할 수 있었지만, Node.js를 사용하면 자바스크립트를 서버 환경에서도 사용할 수 았다.
+> Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임(특정 언어로 만든 프로그램들을 실행할 수 있는 환경)이다. 기존의 자바스크립트는 웹 브라우저에서만 실행할 수 있었지만, Node.js를 사용하면 자바스크립트를 서버 환경에서도 사용할 수 았다.  
 
 노드 환경에서 서버를 만들려면 노드 기본 모듈인 `http`가 필요하다. 이 모듈은 말그대로 HTTP의 각종 기능을 가지고 있다. 모듈을 불러오고 아래 코드를 입력한다.
 
 # HTTP 모듈 생성
-
 ```javascript
 const http = require("http");
 

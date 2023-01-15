@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CentOS7 깃 설치 및 로컬 세팅
+title: "[CentOS] CentOS7 깃 설치 및 로컬 세팅"
 date: 2019-12-11 10:39:26
 modified: 2019-12-11 10:39:26
 tag: [linux, centos, git, youngcart5]
 ---
 
-## 초기 설치 환경
+# 초기 설치 환경
 
 서버
 * Centos7
@@ -17,7 +17,7 @@ tag: [linux, centos, git, youngcart5]
 로컬
 * Homestead
 
-## Git 설치
+# Git 설치
 
 원격 저장소 만들고 ssh 접속하여 `root`권한으로 변경
 
@@ -61,7 +61,7 @@ yum을 이용해서 git 설치
 # git remote add origin `원격 저장소 url`
 ```
 
-## 로컬 소스트리 클론
+# 로컬 소스트리 클론
 
 원격 저장소 url 복사
 ```
@@ -73,7 +73,7 @@ yum을 이용해서 git 설치
 # git remote add origin `원격 저장소 url`
 ```
 
-## 로컬 세팅
+# 로컬 세팅
 
 Homestead.ymal 파일 열고 `site` 부분에
 ```
@@ -90,7 +90,7 @@ $ sudo service nginx restart
 host 파일에 로컬주소 추가(관리자권한으로 실행)  
 `C:\windows\system32\drivers\etc`
 
-## 실서버 디비 백업
+# 실서버 디비 백업
 
 ```
 $ mysqldump -p db명 > 저장할 파일이름.sql
@@ -110,7 +110,7 @@ $ vagrant up
 ```
 한 다음 새로고침 해볼것
 
-## 배포 해보기
+# 배포 해보기
 
 로컬에서 소스 수정 후 commit, push 하고 쉘 접속하여 수정 부분 받기
 ```

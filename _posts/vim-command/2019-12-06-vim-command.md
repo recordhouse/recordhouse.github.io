@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VIM 명령어
+title: "[VIM] VIM 명령어"
 date: 2019-12-06 10:28:19
 modified: 2019-12-06 10:28:19
 tag: [linux, vim, command]
@@ -124,4 +124,4 @@ VIM 명령어 정리
 | # ctrl + l | 불필요한 화면 정리후 다시 표시 |
 
 # References
-[Linux 문서편집기 vi, vim 명령어 정리](https://hyeonstorage.tistory.com/274)  
+[Linux 문서편집기 vi, vim 명령어 정리](https://hyeonstorage.tistory.com/274)

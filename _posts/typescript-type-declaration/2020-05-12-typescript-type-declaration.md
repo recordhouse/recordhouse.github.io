@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 타입스크립트 타입 선언
+title: "[TypeScript] 타입스크립트 타입 선언"
 date: 2020-05-12 10:46:47
 modified: 2020-05-12 10:46:47
 tag: [typescript, javascript]
@@ -250,4 +250,3 @@ console.log(errorMsg()); // Uncaught Error: 오류 발생!
 [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)  
 [3.1 기본 타입](https://ahnheejong.gitbook.io/ts-for-jsdev/03-basic-grammar/primitive-types)  
 [타입스크립트 기초 연습](https://velog.io/@velopert/typescript-basics)
-

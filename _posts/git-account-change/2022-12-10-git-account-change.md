@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git 터미널 계정 변경 방법(Windows)
+title: "[Git] 터미널 계정 변경 방법(Windows)"
 date: 2022-12-09 13:20:01
 modified: 2022-12-09 13:20:01
 tag: [git, windows]

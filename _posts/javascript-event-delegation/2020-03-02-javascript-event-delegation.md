@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 이벤트 위임(Event Delegation)
+title: "[JavaScript] 이벤트 위임(Event Delegation)"
 date: 2020-03-02 19:05:42
 modified: 2020-03-02 19:05:42
 tag: [javascript]
@@ -32,30 +32,12 @@ for (var i = 0; i < item.length; i++) {
 ```
 
 **결과**
-
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJEwGje" data-user="recordboy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/recordboy/pen/OJEwGje">
   이벤트 위임</a> by recordboy (<a href="https://codepen.io/recordboy">@recordboy</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-<!-- <ul id="list">
-    <li>list01</li>
-    <li>list02</li>
-    <li>list03</li>
-    <li>list04</li>
-    <li>list05</li>
-</ul>
-<script>
-var item = document.getElementById('list').getElementsByTagName('li');
-for (var i = 0; i < item.length; i++) {
-    // 각 li에 이벤트 리스너를 등록한다.
-    item[i].addEventListener('click', function(e) {
-        alert(e.target.innerText);
-    })
-}
-</script> -->
 
 리스트 요소가 많이 없는 경우 위 코드는 별 문제가 되지 않는다. 하지만 리스트 요소가 천개, 만개라면 일일히 분리된 이벤트 리스너를 생성하고, 그걸 각각 요소에 등록할 것이다. 이는 매우 비효율적인 방법이다. 아이템 갯수마다 이벤트 리스너를 생성, 등록하는 것보다는 감싸고 있는 리스트에 한개의 이벤트를 등록하고, 조건을 달아줘서 리스트의 요소를 클릭했을시에만 경고창을 출력하도록 구현하면 된다.
 

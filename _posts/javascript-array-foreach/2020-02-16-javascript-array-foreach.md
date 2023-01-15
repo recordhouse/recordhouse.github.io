@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.forEach
+title: "[JavaScript] ES5 Array.forEach"
 date: 2020-02-16 18:46:41
 modified: 2020-02-16 18:46:41
 tag: [javascript, es5]
@@ -8,14 +8,12 @@ tag: [javascript, es5]
 
 `Array.forEach` 매서드는 배열 전체를 돌때, 요소마다 콜백 함수를 실행한다. 배열의 요소에 직접 어떠한 작업을 수행하고 싶을 때 적합한 메서드이다. `Array.forEach` 메서드는 리턴 값이 없다.
 
-## Parameter
-
+# Parameter
 1. 현재 배열 요소의 값
 2. 현재 배열 요소의 index
 3. 현재 돌고 있는 배열 자체
 
-## 예제
-
+# 예제
 ```javascript
 var arr = ["a", "b", "c"];
 
@@ -39,5 +37,5 @@ arr.forEach(function (item, index, array) {
 console.log(arr);
 ```
 
-## References
+# References
 [[JavaScript] Array 객체에서 놓치기 쉬운 6개의 메서드](https://programmingsummaries.tistory.com/357)

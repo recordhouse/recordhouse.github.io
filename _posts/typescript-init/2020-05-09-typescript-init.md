@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 타입스크립트 시작하기
+title: "[TypeScript] 타입스크립트 시작하기"
 date: 2020-05-09 16:36:46
 modified: 2020-05-09 16:36:46
 tag: [typescript, javascript]
@@ -123,4 +123,4 @@ $ npx parcel index.html
 # References
 [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
 [TypeScript-Handbook 한글 문서](https://typescript-kr.github.io/)  
-[타입스크립트, 써야할까?](https://hyunseob.github.io/2018/08/12/do-you-need-to-use-ts/)  
+[타입스크립트, 써야할까?](https://hyunseob.github.io/2018/08/12/do-you-need-to-use-ts/)

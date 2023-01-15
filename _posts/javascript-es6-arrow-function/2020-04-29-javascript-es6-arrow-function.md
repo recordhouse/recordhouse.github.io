@@ -1,30 +1,30 @@
 ---
 layout: post
-title: 화살표 함수(Arrow Function)
+title: "[JavaScript] 화살표 함수(Arrow Function)"
 date: 2020-04-29 20:13:36
 modified: 2020-04-29 20:13:36
 tag: [javascript, es6]
 ---
 
-## 정의
+# 정의
 ECMAScript6(2015)에서 새로 추가된 화살표 함수(Arrow Function)는 function 키워드 대신 화살표(`=>`)를 사용하여 보다 간략한 방법으로 함수를 선언할 수 있다.
 
-### 기존 함수
-#### 함수 표현식
+## 기존 함수
+### 함수 표현식
 ```javascript
 var func = function() {
   ...
 };
 ```
 
-#### 함수 선언식
+### 함수 선언식
 ```javascript
 function func() {
   ...
 }
 ```
 
-### 화살표 함수
+## 화살표 함수
 ```javascript
 const func = () => {
   ...
@@ -32,8 +32,7 @@ const func = () => {
 ```
 
 
-## 화살표 함수의 기본 문법
-
+# 화살표 함수의 기본 문법
 ```javascript
 // 매개 변수가 없을 경우
 const func = () => {
@@ -59,10 +58,10 @@ const func = (x) => { return { a: x } };
 const func = (x) => ({ a: x });
 ```
 
-## 화살표 함수의 호출
+# 화살표 함수의 호출
 화살표 함수는 익명 함수로만 사용할 수 있다. 따라서 함수를 호출하기 위해서는 함수 표현식을 사용한다.
 
-### 함수 표현식
+## 함수 표현식
 ```javascript
 // ES5
 var func = function(x, y) {
@@ -77,7 +76,7 @@ const func = (x, y) => {
 console.log(func(5, 10)); // 15
 ```
 
-### 콜백 함수
+## 콜백 함수
 콜백 함수의 경우 함수 표현식보다 표현이 간결하다.
 
 ```javascript
@@ -96,13 +95,13 @@ const result = arr.map(x => x + x);
 console.log(result); // [2, 4, 6]
 ```
 
-## this
+# this
 기존의 function 키워드로 생선된 일반 함수와 화살표 함수의 큰 차이점 중 하나는 this이다.
 
-### function 키워드 함수의 this
+## function 키워드 함수의 this
 function 키워드로 생성된 함수는 함수가 어떻게 호출되었는지에 따라 this가 바인딩할 객체가 동적으로 결정된다.
 
-#### 일반 함수의 this
+### 일반 함수의 this
 일반 함수(여기서 일반 함수란 중첩 함수나 객체의 함수인 메서드, 콜백 함수가 아닌 전역 스코프에 있는 함수를 말한다.)를 호출하게 되면 this는 전역 객체인 window를 바인딩 한다.
 
 ```javascript
@@ -112,7 +111,7 @@ function func() {
 func();
 ```
 
-#### 생성자 함수의 this
+### 생성자 함수의 this
 하지만 new 키워드를 사용하여 생성자함수 호출 방식으로 obj 객체를 생성하면 함수 안에서의 this는 생성자 함수를 바인딩 한다.
 
 ```javascript
@@ -122,7 +121,7 @@ function Func() {
 var obj = new Func();
 ```
 
-#### 메서드의 this
+### 메서드의 this
 function 키워드로 만들어진 메서드의 this는 자신을 포함하는 객체를 바인딩 한다.
 
 ```javascript
@@ -138,10 +137,10 @@ obj.getName();
 
 obj 객체의 getName 메서드 안에서의 this는 obj 객체를 바인딩 하고 있다. this.myName 호출하면 값이 제대로 출력된다.
 
-### 화살표 함수의 this
+## 화살표 함수의 this
 화살표 함수는 자신의 this를 바인딩하지 않고 언제나 상위 스코프인 this를 바인딩 한다. 이를 Lexical this 라고 한다.
 
-#### 일반 함수의 this
+### 일반 함수의 this
 일반 함수의 경우 function 키워드와 마찬가지로 전역 객체인 window를 바인딩 한다.
 
 ```javascript
@@ -151,7 +150,7 @@ const func = () => {
 func();
 ```
 
-#### 생성자 함수의 this
+### 생성자 함수의 this
 화살표 함수는 생성자 함수로 사용할 수 없다.
 
 ```javascript
@@ -175,7 +174,7 @@ const Func = () => {}
 console.log(Func.prototype) //undefined
 ```
 
-#### 메서드의 this
+### 메서드의 this
 ```javascript
 var obj = {
     myName: '나나',
@@ -188,7 +187,7 @@ obj.getName();
 ```
 화살표 함수로 만들어진 메서드의 this는 자신을 포함하는 객체를 바인딩하지 않고 window를 바인딩하기 때문에 화살표 함수는 메서드에 적합하지 않다.
 
-## References
+# References
 [화살표 함수](https://poiemaweb.com/es6-arrow-function)  
 [JavaScript - 화살표 함수(Arrow function)](https://velog.io/@ki_blank/JavaScript-화살표-함수Arrow-function)  
 [Arrow Function(화살표 함수)이란? :: 마이구미](https://mygumi.tistory.com/229)  

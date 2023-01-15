@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES6 클래스(Class)
+title: "[JavaScript] ES6 클래스(Class)"
 date: 2020-03-04 19:53:03
 modified: 2020-03-04 19:53:03
 tag: [javascript, es6]
@@ -8,10 +8,10 @@ tag: [javascript, es6]
 
 ES6에서 `class`라는 문법이 추가되었고, 기존의 prototype 기반으로 클래스를 선언하는 것보다 명료하게 클래스를 선언할 수 있게 되었다. 
 
-## 기존(ES5) 클래스(생성자)
+# 기존(ES5) 클래스(생성자)
 함수를 만들 때는 함수 표현식과 선언식이 있으며, 선언식으로 작성한 클래스는 호이스팅이 일어난다. 여기서 호이스팅이란 함수를 선언했을 때 값들이 유효범위 최상단에 선언되는 것을 말한다.
 
-### 함수 표현식
+## 함수 표현식
 클래스가 선언되기 전에 인스턴스를 생성하여 에러가 뜬다.
 ```javascript
 var obj = new Person('한나');
@@ -25,7 +25,7 @@ var Person = function(name) {
 }
 ```
 
-### 함수 선언식
+## 함수 선언식
 인스턴스를 함수 선언 전에 생성해도 오류가 나지 않는다. 클래스를 선언식으로 작성하여 호이스팅되었기 때문이다.
 ```javascript
 var obj = new Person('한나');
@@ -39,7 +39,7 @@ function Person(name) {
 }
 ```
 
-## 새로운(ES6) 클래스(생성자)
+# 새로운(ES6) 클래스(생성자)
 
 ```javascript
 class Person {
@@ -71,7 +71,7 @@ class Person {
 ```
 위 코드는 에러를 출력하고 있다. 이유는 새로운 클래스는 호이스팅이 일어나지 않는다. 아니 엄밀히 말해 호이스팅이 발생하지 않는 것처럼 동작하는건데 이거는 추후에 알아보도록 하겠다.
 
-### constructor
+## constructor
 `constructor`는 인스턴스를 생성하고 *클래스 필드*를 초기화하기 위한 특수한 메서드이다.
 
 > *클래스 필드(class field)*
@@ -88,7 +88,7 @@ class Person {
 
 `constructor`는 클래스 내에 한 개만 존재할 수 있으며 이 함수 안에 프로퍼티를 작성하면 되며, 이 안에서 `this`는 생성될 인스턴스를 바라보고 있다.
 
-### 메서드 정의
+## 메서드 정의
 ```javascript
 class Person {
     constructor(name) {
@@ -103,7 +103,7 @@ class Person {
 
 클래스 몸체 안에는 메서드만 선언할 수 있다. 클래스 몸체 안에 프로퍼티를 선언하면 오류를 출력한다.
 
-### extends
+## extends
 ES6 클래스는 `extends`키워드로 상속을 구현한다.
 
 ```javascript
@@ -138,7 +138,7 @@ obj.getName();
 3. `super`클래스의 `constructor`에서 this는 현재의 인스턴스를 참조하므로 인스턴스의 name프로퍼티로 전달받은 값을 설정
 4. 생성한 인스턴스를 `Inner`에 할당
 
-### super
+## super
 위에 코드에서도 잠깐 나왔지만 `super`키워드는 슈퍼 클래스의 메서드를 호출할 수 있다.
 
 ```javascript
@@ -159,8 +159,7 @@ var obj = new Inner();
 obj.msg();
 ```
 
-### static
-
+## static
 `static`키워드는 클래스를 위한 정적(static) 메서드를 정의한다. 정적 메서드는 prototype에 연결되지 않고 클래스에 직접 연결되기 때문에 클래스의 인스턴스 없이 호출되며, 클래스의 인스턴스에서는 호출할 수 없다.
 
 ```javascript
@@ -195,8 +194,8 @@ Inner.msg2(); // 안녕
 
 정적 메서드는 어플리케이션을 위한 유틸리티 함수를 생성하는데 주로 사용된다.
 
-## References
-[super](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/super)  
+# References
 [[JS] javascript - OOP Class, Super](https://velog.io/@hytenic/Javascript-javascript-OOP-Class-Super)  
 [ES6 Class 파헤치기](https://jongmin92.github.io/2017/06/18/JavaScript/class/#index)  
+[super](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/super)  
 [클래스](https://poiemaweb.com/es6-class)

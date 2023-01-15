@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리액트로 전화번호부 만들기
+title: "[React] 리액트로 전화번호부 만들기"
 date: 2020-03-27 20:51:12
 modified: 2020-03-27 20:51:12
 tag: [react, javascript, jsx]
@@ -8,10 +8,7 @@ tag: [react, javascript, jsx]
 
 리액트로 간단한 전화번호부를 만들어 보자, 우선 새로운 리액트 프로젝트를 만들고, 로컬 서버를 시작한다. 프로젝트 이름은 `phone-book`으로 하겠다.
 
-<!-- more -->
-
-## 프로젝트 초기화
-
+# 프로젝트 초기화
 ```
 $ create-react-app phone-book --use-npm
 $ cd phone-book
@@ -32,10 +29,10 @@ export default App;
 
 `http://localhost:3000`에 들어가보면 hello 라고 정상적으로 출력 될 것이다. 이제 본격적으로 하위 컴포넌트를 만들어 App.js에 연결해 보겠다.
 
-## 입력 폼 컴포넌트 추가
+# 입력 폼 컴포넌트 추가
 src 디렉토리 내부에 components 디렉토리를 만든 뒤 그 안에 PhoneForm.jsx 파일을 만든 뒤 아래 코드를 입력한다.
 
-### 이름 인풋 값 state에 할당
+## 이름 인풋 값 state에 할당
 ```javascript
 import React, { Component } from 'react';
 class PhoneForm extends Component {
@@ -61,7 +58,7 @@ export default PhoneForm;
 
 코드를 살펴보면, 우선 인풋태그의 `onChange` 이벤트가 발생하면 `handleChange` 함수를 실행하게 된다. 이벤트 객체를 파라미터로 받은 `handleChange` 함수는 `e.target.value`값을 통해 인풋 요소의 값을 가져와서 `state`의 `name`값을 설정하게 된다. 인풋태그 아래 텍스트가 `state`의 값이 잘 바뀌고 있는지 확인할 수 있게 해준다.
 
-## App컴포넌트에 연결
+# App컴포넌트에 연결
 App.js 파일에 PhoneForm 컴포넌트를 아래와 같이 연결해 준다.
 
 ```javascript
@@ -81,7 +78,7 @@ export default App;
 
 인풋 태그에 값을 입력할 때 마다 아래에 입력값이 출력되는 것을 확인할 수 있다.
 
-### 전화번호 인풋 태그 추가
+## 전화번호 인풋 태그 추가
 전화번호가 들어갈 phone 인풋태그를 더 추가한다. 아래 코드를 살펴보자
 
 ```javascript
@@ -114,7 +111,7 @@ phone 인풋태그가 추가되었으니 해당 값을 가져오는 이벤트 �
 
 우선 인풋 태그에 name 값을 추가 하여 각 인풋을 구분할 수 있게 되었다. setState 함수를 보면 `[e.target.name]`로 이벤트 객체의 name 값을 state의 키값으로 활용하고 있다. 즉 name 인풋을 입력하면 `[e.target.name]`값은 name이기 때문에 state의 name 프로퍼티에 e.target.value 값을 할당, phone 인풋을 입력하면 `[e.target.name]`값은 phone이기 때문에 state의 phone 프로퍼티에 e.target.value 값을 할당 한다고 보면 된다. 두 인풋 값이 하단에 잘 출력되는 것을 확인할 수 있다.
 
-## 부모 컴포넌트에게 정보 전달하기
+# 부모 컴포넌트에게 정보 전달하기
 PhoneForm 컴포넌트에 있는 값을 부모(App)컴포넌트에 값을 전달해줄 차례다. 이런 상황에는, 부모 컴포넌트에서 메서드를 만들고, 이 메서드를 자식에게 전달한 다음에 자식 내부에서 호출하는 방식을 사용한다.
 
 순서를 보면 우선 App에서 handleCreate라는 메서드를 만들고 이를 props를 이용하여 PhoneForm 컴포넌트에 전달을 한다. 그리고 PhoneForm 컴포넌트에 submit 버튼을 추가하여 이벤트가 발생하면 props로 받은 함수를 호출하여 App에서 파라미터로 받은 값을 사용할 수 있도록 하겠다. 우선 App 컴포넌트는 아래와 같이 수정해 준다.
@@ -191,10 +188,10 @@ render 함수 안을 먼저 보면, submit 버튼을 추가하고, form태그에
 
 메서드는 handleSubmit 함수를 추가하였는데, 우선 submit 이벤트가 발생하면 페이지가 리로드되기 때문에 함수가 실행될 때 e.preventDefault 함수를 이용하여 리로드를 막는다. 다음에 props으로 받은 onCreate 함수를 실행하여 현재 state 값을 전달해주고, 현재 값은 초기화 해준다. submit 버튼을 클릭하면 콘솔창에 전달받은 인풋값이 정상적으로 출력될 것이다.
 
-## 데이터 추가
+# 데이터 추가
 PhoneForm 컴포넌트의 데이터를 부모 컴포넌트로 전달했으니 이제 부모 컴포넌트에 데이터를 계속 추가 하도록 하겠다. 
 
-### 리액트에서의 배열 다루기
+## 리액트에서의 배열 다루기
 데이터 객체를 배열에 계속 추가하기 위해선 리액트에서 배열을 어떻게 다루는지 알아야 한다. 기존의 자바스크립트에서는 배열에 값을 추가할 때 push 메서드를 사용했었다. 예를 들어 `arr` 배열이 있다고 치자
 
 ```javascript
@@ -205,7 +202,7 @@ console.log(arr); // [1, 2, 3, 4]
 
 기존 자바스크립트에서 배열에 값을 추가할때는 위처럼 하던것처럼 리액트에서도 `this.state.arr.push('value');` 처럼 해도 된다고 생각할 수 있다. 하지만 리액트에서는 state 내부의 값을 직접적으로 수정하면 절대 안된다. 이를 불변성 유지라고 하는데, push, splice, unshift, pop 같은 내장함수는 배열 자체를 수정하므로 적합하지 않다. 대신 기존 배열에 기반하여 새 배열을 만들어내는 [concat](/2018/05/15/javascript-array-method/), slice, [map](/2020/02/17/javascript-array-map/), [filter](/2020/02/18/javascript-array-filter/) 같은 함수를 사용해야한다. 리액트에서 불변성 유지가 중요한 이유는 불변성을 유지해야, 리액트에서 모든것들이 필요한 상황에 리렌더링 되도록 설계할 수 있고, 그렇게 해야 나중에도 성능도 최적화 할 수 있기 때문이다.
 
-### 배열 추가
+## 배열 추가
 App 컴포넌트의 state에 information 이라는 배열을 만들고, 그 안에 배열의 기본값인 샘플 데이터 두개를 추가 할 것이다. 객체 형식은 아래와 같은 형식으로 작성한다.
 
 ```javascript
@@ -272,15 +269,15 @@ render 함수에서도 위와 같이 비구조와 할당으로 information 값�
 [{"id":0,"name":"한나","phone":"000-0000-0000"},{"id":1,"name":"민수","phone":"000-0000-0000"},{"id":2,"name":"인성","phone":"000-0000-0000"}]
 ```
 
-## 데이터 렌더링
+# 데이터 렌더링
 배열의 내장 함수인 [map](/2020/02/17/javascript-array-map/)을 이용하여 information을 컴포넌트로 변환하여 출력하도록 하겠다. 
 
-### 컴포넌트 만들기
+## 컴포넌트 만들기
 두개의 컴포넌트를 만들 것이다.
 * PhoneInfo: 각 전화번호 정보를 보여주는 컴포넌트
 * PhoneInfoList: 여러개의 PhoneInfo 컴포넌트를 보여줌
 
-#### PhoneInfo 생성
+### PhoneInfo 생성
 PhoneInfo.jsx 파일을 만들고 아래처럼 작성한다.
 
 ```javascript
@@ -315,7 +312,7 @@ export default PhoneInfo;
 
 info 객체를 props으로 받아와서 렌더링을 할 것이다. 여기서 만약 info 객체에 값이 전달 안 될 경우 에러가 뜰 것이다. 위 코드에서 info 객체의 값을 비구조화 할당하고 있는데, info가 undefined 경우 내부의 값을 가져오지 못하기 때문이다. 때문에 위 코드에서 defaultProps를 이용하여 info의 기본값을 설정해준다.
 
-#### PhoneInfoList 생성
+### PhoneInfoList 생성
 다음에 PhoneInfoList 컴포넌트를 생성하고, 아래처럼 코드를 입력한다.
 
 ```javascript
@@ -376,7 +373,7 @@ key 값을 설정하지 않으면 배열의 index 값이 자동으로 key 값으
 
 새로운 요소 하나만 생성되고 나머지는 그대로 유지된다. key 값은 언제나 고유해야 한다. 실제 데이터베이스에도 데이터를 추가하면 해당 데이터를 가리키는 고유 id가 있다. 여기서는 각 요소의 고유 id를 key 값으로 사용하고 있다.
 
-#### PhoneInfoList 렌더링
+### PhoneInfoList 렌더링
 이제 PhoneInfoList 컴포넌트를 App 컴포넌트에 렌더링을 하고 data 값을 props으로 전달하면 된다.
 
 ```javascript
@@ -421,7 +418,7 @@ export default App;
 
 확인해 보면 기존 데이터 렌더링 및 신규 데이터 추가도 확인해 볼 수 있다. 가끔 데이터에 고유 값이 없을 수도 있다. 그럴 경우에는 렌더링은 되지만 콘솔창에 경고창이 뜰 것이다. 꼭 배열을 렌더링 할 때는 고유의 key 값을 사용하도록 한다.
 
-## 데이터 삭제
+# 데이터 삭제
 
 이제 전화번호부에 등록된 데이터를 삭제할 코드를 작성하겠다. 배열에서 삭제 방법은 [filter](/2020/02/18/javascript-array-filter/) 메서드를 사용할 것이다. App 컴포넌트에 handleRemove 함수를 만들어 준뒤 아래처럼 코드를 수정한다. 삭제할 id 값을 받아와 filter 메서드를 사용하여 id 값이 일치하지 않는 값들을 state에 다시 세팅 할 것이다. 함수를 만들었으면 이것을 하위 컴포넌트인 PhoneInfoList에 전달한다.
 
@@ -537,7 +534,7 @@ class PhoneInfo extends Component {
 export default PhoneInfo;
 ```
 
-## 데이터 수정
+# 데이터 수정
 수정할 때도 마찬가지로 불변성을 지켜워야 하며, 기존의 배열과 그 내부에 있는 객체를 직접 수정하지 않도록 한다. 예를 들어 아래와 같은 객체로 이루어진 배열이 있다고 가정해 본다.
 
 ```javascript
@@ -778,7 +775,7 @@ export default PhoneInfo;
 
 결과물을 확인해 보면 수정이 잘 되는 것을 확인해 볼 수 있다. 
 
-## References
+# References
 [누구든지 하는 리액트 6편: input 상태 관리하기](https://velopert.com/3634)  
 [누구든지 하는 리액트 7편: 배열 다루기 (1) 생성과 렌더링](https://velopert.com/3636)  
 [누구든지 하는 리액트 8편: 배열 다루기 (2) 제거와 수정](https://velopert.com/3638)

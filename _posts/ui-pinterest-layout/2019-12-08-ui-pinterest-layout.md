@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 핀터레스트 레이아웃 구현하기
+title: "[UI] 핀터레스트 레이아웃 구현하기"
 date: 2019-12-08 10:29:47
 modified: 2019-12-08 10:29:47
 tag: [ui, vanillajs]
@@ -291,4 +291,3 @@ function boxLayout() {
 
 # References
 [핀터레스트(Masonry) 스타일 레이아웃을 만드는 세 가지 방법](https://n-log.tistory.com/33)
-

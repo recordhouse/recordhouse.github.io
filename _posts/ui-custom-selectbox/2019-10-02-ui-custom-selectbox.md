@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 커스텀 셀렉트박스(custom selectbox)
+title: "[UI] 커스텀 셀렉트박스(custom selectbox)"
 date: 2019-10-02 09:17:59
 modified: 2019-10-02 09:17:59
 tag: [ui, jquery]
 ---
 
+# 설명
 기존의 `select` 태그는 CSS 적용이 안되는 부분이 많아 디자인에 제약이 많다.  
 디자인을 더욱 다양하게 적용할 수 있는 커스텀 셀렉트 박스는 아래와 같이 만들 수 있다.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 깃허브 호스팅 페이지에서 404 오류 나올 경우
+title: "[GitHub] 깃허브 호스팅 페이지에서 404 오류 나올 경우"
 date: 2020-03-03 19:50:48
 modified: 2020-03-03 19:50:48
 tag: [github, git]
@@ -13,5 +13,5 @@ $ git commit --allow-empty -m 'Trigger rebuild'
 $ git push origin
 ```
 
-## References
+# References
 > [How to fix HTTP 404 on Github Pages?](https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages/45907768#45907768)

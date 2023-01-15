@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ES5 Array.map
+title: "[JavaScript] ES5 Array.map"
 date: 2020-02-17 18:49:45
 modified: 2020-02-17 18:49:45
 tag: [javascript, es5]
@@ -8,14 +8,12 @@ tag: [javascript, es5]
 
 `Array.map` 메서드는 `Array.forEach`와 마찬가지로 배열의 각 요소를 순회하며 콜백 함수를 실행한다. 다만, 콜백에서 리턴되는 값을 배열로 만들어낸다. 원본 배열은 건들지 않고 그 요소들을 사용해서 혹은 약간 변형해서 새로운 배열을 만들어야 할 때 유용하다.
 
-## Parameter
-
+# Parameter
 1. 현재 배열 요소의 값
 2. 현재 배열 요소의 index
 3. 현재 돌고 있는 배열 자체
 
-## 예제
-
+# 예제
 ```javascript
 var arr = ['a', 'b', 'c'];
 
@@ -34,108 +32,14 @@ console.log(newArr);
 // ["aNEW", "bNEW", "cNEW"]
 ```
 
-<!-- ## 실용적인 예제
+## 실용적인 예제
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="poZrEvw" data-user="recordboy" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/recordboy/pen/poZrEvw">
+  데이터 가져오기</a> by recordboy (<a href="https://codepen.io/recordboy">@recordboy</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-`Array.map` 메서드는 아래와 같이 쓰일 수 있다.
-
-```html
-<button type="button" id="click" onclick="render()">데이터 얻기</button>
-<table id="tbl">
-    <thead>
-        <th>이름</th>
-        <th>전화번호</th>
-    </thead>
-    <tbody></tbody>
-</table>
-```
-
-```javascript
-// ajax를 통해 가져온 데이터라고 가정
-var data = [
-    {
-        name: 'a',
-        phone: '010-1000-2000'
-    },
-    {
-        name: 'b',
-        phone: '010-3000-4000'
-    },
-    {
-        name: 'c',
-        phone: '010-5000-6000'
-    }
-];
-
-// Array.map 메서드를 사용하여 배열 요소의 데이터를 html로 변경
-function makeDom() {
-    var dom = data.map(function (item, index) {
-        return '<tr><td>' + item.name + '</td><td>' + item.phone + '</td></tr>';
-    });
-    return dom;
-}
-
-// 배열을 하나의 값으로 만든 후 테이블에 html 추가
-function addTbl(dom) {
-    var tblList = dom.join('');
-    document.getElementById('tbl').getElementsByTagName('tbody')[0].innerHTML = tblList;
-}
-
-// 위 로직을 실행
-function render() {
-    var list = makeDom();
-    addTbl(list);
-}
-```
-
-## 결과
-
-<button type="button" id="click" onclick="render()">데이터 얻기</button>
-<table id="tbl">
-    <thead>
-        <th>이름</th>
-        <th>전화번호</th>
-    </thead>
-    <tbody></tbody>
-</table>
-
-<script>
-// ajax를 통해 가져온 데이터라고 가정
-var data = [
-    {
-        name: 'a',
-        phone: '010-1000-2000'
-    },
-    {
-        name: 'b',
-        phone: '010-3000-4000'
-    },
-    {
-        name: 'c',
-        phone: '010-5000-6000'
-    }
-];
-
-// Array.map 메서드를 사용하여 배열 요소의 데이터를 html로 변경
-function makeDom() {
-    var dom = data.map(function (item, index) {
-        return '<tr><td>' + item.name + '</td><td>' + item.phone + '</td></tr>';
-    });
-    return dom;
-}
-
-// 배열을 하나의 값으로 만든 후 테이블에 html 추가
-function addTbl(dom) {
-    var tblList = dom.join('');
-    document.getElementById('tbl').getElementsByTagName('tbody')[0].innerHTML = tblList;
-}
-
-// 위 로직을 실행
-function render() {
-    var list = makeDom();
-    addTbl(list);
-}
-</script> -->
-
-## References
+# References
 [[JavaScript] Array 객체에서 놓치기 쉬운 6개의 메서드](https://programmingsummaries.tistory.com/357)  
 [자바스크립트 Array map](https://yuddomack.tistory.com/entry/자바스크립트-Array-map)

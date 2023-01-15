@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CentOS7 PHP 설치
+title: "[Centos] CentOS7 PHP 설치"
 date: 2019-10-24 09:47:28
 modified: 2019-10-24 09:47:28
 tag: [linux, centos, php]
 ---
 
-## 설치환경
+# 설치환경
 
 * CentOS 7.2
 * Extra Packages for Enterprise Linux (EPEL) repository
@@ -18,7 +18,7 @@ tag: [linux, centos, php]
 > **Extra Packages for Enterprise Linux (EPEL) repository**  
 > * EPEL (Extra Packages for Enterprise Linux) 은 Fedora Project 에서 제공되는 저장소로 각종 패키지의 최신 버전을 제공하는 community 기반의 저장소이다.
 
-## wget 설치
+# wget 설치
 인터넷에 있는 PHP압축파일을 설치하기 위해선 wget을 설치해야 한다. wget은 인터넷 파일을 다운받는 명령어로서 리눅스 최소 설치 시에는 wget을 따로 설치해야 한다. 아래 Yum 명령어를 이용하여 설치해 준다.
 
 > **Yum [(참고)](https://ko.wikipedia.org/wiki/Yum)**  
@@ -38,7 +38,7 @@ Usage: wget [OPTION]... [URL]...
 Try `wget --help' for more options.
 ```
 
-1. remi repository를 yum 에 추가 한다.
+**1. remi repository를 yum 에 추가 한다.**
 
 ```
 # wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -49,19 +49,19 @@ Try `wget --help' for more options.
 # yum-config-manager --enable remi-php72
 ```
 
-2. 기존의 설치된 PHP 패키지를 확인하여 잘못된 패키지가 삭제되지 않도록 한다.
+**2. 기존의 설치된 PHP 패키지를 확인하여 잘못된 패키지가 삭제되지 않도록 한다.**
 
 ```
 # yum list installed | cut -d " " -f 1 | grep php
 ```
 
-3. 기존 설치된 PHP를 제거한다.
+**3. 기존 설치된 PHP를 제거한다.**
 
 ```
 # yum remove -y `yum list installed | cut -d " " -f 1  | grep php`
 ```
 
-4. php 패키지 설치한다. php-common 외의 패키지는 자신의 상황에 맞게 조정해서 설치한다.
+**4. php 패키지 설치한다. php-common 외의 패키지는 자신의 상황에 맞게 조정해서 설치한다.**
 
 ```
 # yum install -y php-common php-fpm php-cli \
@@ -82,7 +82,7 @@ Try `wget --help' for more options.
 # yum update php-*
 ```
 
-5. 설치된 php 버전을 확인해 본다.
+**5. 설치된 php 버전을 확인해 본다.**
 
 ```
 # php -v
@@ -93,7 +93,7 @@ Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies
     with Zend OPcache v7.2.24, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-## References
+# References
 [PHP 7.2 설치(업그레이드) [CentOS 7 / remi RPM repository]](https://blog.asamaru.net/2018/02/14/install-php-7-2-on-centos-with-remi-rpm-repository)  
 [RHEL/CentOS 5,6,7 에 EPEL 과 Remi/WebTatic Repository 설치하기](https://www.lesstif.com/pages/viewpage.action?pageId=6979743)  
 [YUM 명령어와 epel 저장소 추가하는 방법](https://mainia.tistory.com/5614)

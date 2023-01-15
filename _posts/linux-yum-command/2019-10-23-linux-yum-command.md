@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Yum 명령어
+title: "[Yum] Yum 명령어"
 date: 2019-10-23 09:46:00
 modified: 2019-10-23 09:46:00
 tag: [linux, yum]

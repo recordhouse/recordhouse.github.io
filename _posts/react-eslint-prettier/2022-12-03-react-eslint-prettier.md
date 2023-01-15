@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ESlint, Prettier 초기 설정 샘플(React)
+title: "[React] ESlint, Prettier 초기 설정 샘플"
 date: 2022-12-02 12:34:11
 modified: 2022-12-02 12:34:11
 tag: [react, eslint, prettier]

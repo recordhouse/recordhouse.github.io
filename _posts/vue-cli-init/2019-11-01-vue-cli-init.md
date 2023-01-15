@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue CLI 초기 세팅
+title: "[Vue] CLI 초기 세팅"
 date: 2019-07-01 08:52:44
 modified: 2019-07-01 08:52:44
 tag: [vue.js, command]
@@ -73,8 +73,8 @@ $ npm run dev // vue-cli 2.x
 > * **unit-mocha:** javascript 진영에서 테스트 러너를 지원하는 테스트 프레임워크이다.
 
 # References
-[Vue CLI 3.0 사용하기](https://vuejs.kr/vue/vue-cli/2018/01/27/vue-cli-3)
-[Vue CLI 3.X 사용하기](https://velog.io/@skyepodium/Vue-CLI-3.X-사용하기)
-[Vue CLI 3 사용법](https://www.daleseo.com/vue-cli3)
-[[Vue.js] Vue Version 비교 (cli2 vs cli3)](https://soraji.github.io/front/2019/11/04/VueVersion)
-[Vue-CLI 도구 활용방법](https://ux.stories.pe.kr/136)
+[Vue CLI 3.0 사용하기](https://vuejs.kr/vue/vue-cli/2018/01/27/vue-cli-3)  
+[Vue CLI 3.X 사용하기](https://velog.io/@skyepodium/Vue-CLI-3.X-사용하기)  
+[Vue CLI 3 사용법](https://www.daleseo.com/vue-cli3)  
+[[Vue.js] Vue Version 비교 (cli2 vs cli3)](https://soraji.github.io/front/2019/11/04/VueVersion)  
+[Vue-CLI 도구 활용방법](https://ux.stories.pe.kr/136)  

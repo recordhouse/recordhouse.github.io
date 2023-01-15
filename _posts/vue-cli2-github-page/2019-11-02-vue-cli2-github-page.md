@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Vue Cli 2.x를 이용한 Github페이지 만들기
+title: "[Vue] Cli 2.x를 이용한 Github페이지 만들기"
 date: 2019-11-02 09:58:43
 modified: 2019-11-02 09:58:43
 tag: [vue.js, github]
 ---
 
+# 설명
 Vue Cli 2.x 버전을 이용하여 프로젝트를 생성하고 깃허브 페이지에 적용하는 방법을 알아보도록 한다.
 
 # 설치 시작
@@ -51,8 +52,6 @@ $ npm run build
 GitHub Pages 항목에서 Source 옵션을 master branch /docs folder로 선택해주면 끝이다.  
 페이지 url은 `https://[유저이름].github.io/[저장소이름]/` 로 들어가면 된다. 위에까지의 과정은 [이곳](https://stackoverflow.com/questions/47615863/problems-deploying-to-github-pages-with-vue-project)에 쉽게 잘 정리되어 있다.
 
-
 # References
 [vue github page 만들기](https://yhmane.tistory.com/72)  
 [Problems deploying to github pages with vue project](https://stackoverflow.com/questions/47615863/problems-deploying-to-github-pages-with-vue-project)
-

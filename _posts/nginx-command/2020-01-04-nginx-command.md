@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nginx 리눅스 명령어
+title: "[Nginx] Nginx 명령어"
 date: 2020-01-04 10:49:13
 modified: 2020-01-04 10:49:13
 tag: [nginx, command]

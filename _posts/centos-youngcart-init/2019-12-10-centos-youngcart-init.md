@@ -1,15 +1,15 @@
 ---
 layout: post
-title: CentOS7 영카트 설치 및 초기 세팅
+title: "[CentOS] CentOS7 영카트 설치 및 초기 세팅"
 date: 2019-12-10 10:33:20
 modified: 2019-12-10 10:33:20
 tag: [linux, centos, nginx, youngcart5]
 ---
 
-## 초기 설치 환경
+# 초기 설치 환경
 * CentOS 7
 
-## 사용자 설정
+# 사용자 설정
 
 로그인
 ```
@@ -44,7 +44,7 @@ root ssh 접속 되는지 확인 후 webapp으로 접속 후 root로 변경
 # su root
 ```
 
-## Nginx 설치
+# Nginx 설치
 
 패키기 업그레이드
 ```
@@ -65,7 +65,7 @@ Nginx 활성화
 
 본인 ip주소로 들어가 CentOS 화면이 출력되면 성공
 
-## MySQL 설치
+# MySQL 설치
 
 wget 설치
 ```
@@ -92,7 +92,7 @@ MySQL 5.7 데몬 시작
 # sudo systemctl start mysqld
 ```
 
-## 비밀번호 설정
+# 비밀번호 설정
 
 MySQL 접속
 ```
@@ -132,7 +132,7 @@ ALTER USER 문을 사용하여 비밀번호 재설정
 # uninstall plugin validate_password;
 ```
 
-## 데이터베이스 생성
+# 데이터베이스 생성
 
 ```
 # create database DB 이름;
@@ -143,7 +143,7 @@ ALTER USER 문을 사용하여 비밀번호 재설정
 # show databases;
 ```
 
-## 사용자 추가 & 권한 부여(root 로 mysql 접속 후 작업)
+# 사용자 추가 & 권한 부여(root 로 mysql 접속 후 작업)
 
 localhost 로만 접근 가능한 계정 생성(외부에서 워크벤치 등으로 접근 안됨)
 ```
@@ -175,7 +175,7 @@ localhost 로만 접근 가능한 계정 생성(외부에서 워크벤치 등으
 # FLUSH PRIVILEGES;
 ```
 
-## 외부 접속 설정 (firewall)
+# 외부 접속 설정 (firewall)
 
 ```
 # yum install firewalld
@@ -204,7 +204,7 @@ localhost 로만 접근 가능한 계정 생성(외부에서 워크벤치 등으
 # firewall-cmd --set-default-zone=trusted
 ```
 
-## PHP 설치
+# PHP 설치
 
 ```
 # yum install yum-plugin-replace
@@ -231,7 +231,7 @@ PHP 활성화
 `vi /etc/php-fpm.d/www.conf`로 들어가서 `group = apache`를 `group = webapp`으로 변경, `user = apache`도 `user = webapp` 로 변경 필수  
 하드웨어 사양에 따라 pm 관련 세팅
 
-## 환경 설정
+# 환경 설정
 
 nginx conf 파일 세팅
 ```
@@ -314,5 +314,5 @@ FTP로 youngcart5.tar.gz를 /data/web_htdocs에 업로드 후 압축을 푼다.
 
 본인 아이피주소로 들어가 사용자 정보를 입력하면 자동으로 설치가 완료된다.
 
-## References
+# References
 [MySQL 5.7 세팅 (CentOS7)](https://mosei.tistory.com/entry/MySQL-57-세팅-CentOS7)

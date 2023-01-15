@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리액트 소개
+title: "[React] 리액트 소개"
 date: 2020-03-05 19:54:10
 modified: 2020-03-05 19:54:10
 tag: [react, javascript]

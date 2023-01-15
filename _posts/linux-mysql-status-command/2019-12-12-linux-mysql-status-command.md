@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 리눅스 MySQL 시작, 정지, 재시작, 상태확인
+title: "[Linux] 리눅스 MySQL 시작, 정지, 재시작, 상태확인"
 date: 2019-12-12 10:43:21
 modified: 2019-12-12 10:43:21
 tag: [linux, mysql]

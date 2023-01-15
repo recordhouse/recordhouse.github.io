@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CentOS7 Apache 설치
+title: "[Linux] CentOS7 Apache 설치"
 date: 2019-10-25 09:50:30
 modified: 2019-10-25 09:50:30
 tag: [linux, centos]
