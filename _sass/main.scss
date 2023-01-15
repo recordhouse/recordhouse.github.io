@@ -48,21 +48,6 @@ $on-tablet: 769px;
 $on-desktop: 1024px;
 $on-widescreen: 1152px;
 
-// Scroll Bar
-html::-webkit-scrollbar {
-  width: 8px;
-}
-
-html::-webkit-scrollbar-thumb {
-  height: 20%;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-html::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
