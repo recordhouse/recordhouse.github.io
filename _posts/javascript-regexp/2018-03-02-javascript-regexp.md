@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 정규표현식
+title: "[Regexp] 정규표현식"
 date: 2018-03-02 21:41:31
 modified: 2018-03-02 21:41:31
-tag: [javascript, regexp]
+tag: [regexp, javascript]
 ---
 
+# 정의
 정규표현식은 문자열에 포함된 문자 조합을 찾기 위해 사용되거나 그 문자열을 다른 문자열로 치환해 주는 패턴이다. 예를 들면 회원가입 화면에서 사용자로 부터 입력받는 전화번호가 유효한지 체크할 필요가 있을 때 정규표현식을 사용하면 간단하게 처리할 수 있다.
 
 ```javascript
@@ -18,9 +19,10 @@ console.log(regExp.test(tel)); // false
  > 정규표현식은 하나의 언어라고 할 만큼 모든것을 다루기에는 너무 방대하다. 정규표현식 패턴은 [zvon의 정규표현식 tutorials](http://zvon.org/comp/r/tut-Regexp.html#Pages~Contents)에서 확인할 수 있다.
 
 
+# 정규표현식 사용법
 정규표현식은 리터럴 표기법과 생성자 함수로 생성할 수 있다. 
 
-### 리터럴 방식
+## 리터럴 방식
 
 ```javascript
 var re = /ab + c/;
@@ -28,7 +30,7 @@ var re = /ab + c/;
 
 리터럴 방식은 스크립트가 불어와질 때 컴파일 된다. 정규직이 상수라면 이렇게 사용하는 것이 성능을 향상시킨다.
 
-### 생성자 함수 방식
+## 생성자 함수 방식
 
 ```javascript
 var re = new RegExp("ab + c");
@@ -42,8 +44,7 @@ var re = /pa/i;
 
 `/` 는 시작, 종료기호 이며, `pa`는 패턴, `i`는 프래그 이다.
 
-## 정규표현식 메서드
-
+# 정규표현식 메서드
 자바스크립트에서 정규표현식 패턴들은 `RegExp`의 `exec` 메서드와 `test` 메서드, 그리고 `String`의  `match`메서드, `replace`메서드, `search`메서드, `split` 메서드와 함께 쓰인다. 
 
 |메서드|설명|
@@ -55,6 +56,7 @@ var re = /pa/i;
 | String.search() | 대응되는 문자열이 있는지 검사하는 String 메서드 이다. 대응된 부분의 인덱스를 반환한다. 대응되는 문자열을 찾지 못했다면 -1을 반환한다. |
 | String.split() | 정규식 혹은 문자열로 대상 문자열을 나누어 배열로 반환하는 String 메서드이다. |
 
+## 정규표현식 메서드 예시
 ```javascript
 var str = 'this is a pen.';
 var regexr = /is/ig;
@@ -70,8 +72,7 @@ console.log(str.search(regexr)); // 2
 console.log(str.split(regexr)); // (3) ["th", " ", " a pen."]
 ```
 
-## References
+# References
 [정규표현식](https://opentutorials.org/course/743/6580)  
 [5.26 RegExp 정규표현식](https://poiemaweb.com/js-regexp)  
 [정규 표현식](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/정규식)
-

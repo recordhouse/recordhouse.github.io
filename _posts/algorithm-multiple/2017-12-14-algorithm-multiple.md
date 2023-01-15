@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 배수 구하기
+title: "[JavaScript] 배수 구하기"
 date: 2017-12-14 21:03:09
 modified: 2017-12-14 21:03:09
-tag: [algorithm, javascript]
+tag: [javascript, algorithm]
 ---
 
 0부터 100까지 특정 배수를 구하는법이다. 반복문과 조건문, 나머지 연산자가 사용된다.

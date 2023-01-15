@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 구구단 출력하기
+title: "[JavaScript] 구구단 출력하기"
 date: 2018-02-20 21:32:29
 modified: 2018-02-20 21:32:29
-tag: [algorithm, javascript]
+tag: [javascript, algorithm]
 ---
 
 자바스크립트로 중첩 반복문을 활용한 구구단 출력하기 예제이다. 예전에 면접볼 때 코딩 테스트에서 해당 문제가 나와 적어본다. 우선 반복문으로 2단의 값을 출력해 보자

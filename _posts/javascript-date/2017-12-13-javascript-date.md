@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 날짜 구하기(Data 함수)
+title: "[JavaScript] 날짜 구하기(Data 함수)"
 date: 2017-12-13 20:48:10
 modified: 2017-12-13 20:48:10
 tag: [javascript]
@@ -15,7 +15,7 @@ console.log(value);
 // Thu Jan 09 2020 14:44:13 GMT+0900 (한국 표준시)
 ```
 
-## 특정 값을 구하는 메서드
+# 특정 값을 구하는 메서드
 
 | 메서드 | 값 |
 |:---|:---|
@@ -24,7 +24,7 @@ console.log(value);
 | getDate() | 날짜 |
 | getDay() | 요일 |
 
-## 응용
+# 응용
 
 2015년 12월 25일의 요일을 구하는 법
 
@@ -35,5 +35,5 @@ function func(a, b) {
 console.log(func(12, 25)); // FRI
 ```
 
-## References
+# References
 [프로그래머스 문제 풀이 Level 1](https://www.zerocho.com/category/Algorithm/post/5b79898d337215001b3a18eb)  

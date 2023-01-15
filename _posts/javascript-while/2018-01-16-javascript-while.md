@@ -1,11 +1,13 @@
 ---
 layout: post
-title: while 반복문
+title: "[JavaScript] while 반복문"
 date: 2018-01-16 21:20:27
 modified: 2018-01-16 21:20:27
 tag: [javascript]
 ---
 
+# 정의
+# while
 `while`문은 조건을 검사하여 `true`일경우 계속 구문을 실행시키는 반복문이다.
 
 ```javascript
@@ -25,6 +27,7 @@ while (i < 3) {
 // 2
 ```
 
+## do-while
 `do-while`은 `whild`문과 비슷하지만 처음은 조건과 상관없이 구문을 실행하고 이후에 조건을 검사하여 `true`일때 구문을 실행한다.
 
 ```javascript

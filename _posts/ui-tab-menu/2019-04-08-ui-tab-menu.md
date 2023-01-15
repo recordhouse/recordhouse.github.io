@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 탭메뉴(tab menu)
+title: "[UI] 탭메뉴(tab menu)"
 date: 2019-04-08 08:36:59
 modified: 2019-04-08 08:36:59
-tag: [ui, vanillajs]
+tag: [ui, javascript, vanillajs]
 ---
 
+# 설명
 vanillaJS로 제작된 기본 탭 메뉴
 
 # 구현
@@ -16,7 +17,7 @@ vanillaJS로 제작된 기본 탭 메뉴
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-# html
+# HTML
 ```html
 <div id="tab">
     <div class="btn">
@@ -34,7 +35,7 @@ vanillaJS로 제작된 기본 탭 메뉴
 </div>
 ```
 
-# css
+# CSS
 ```css
 #tab {
     border: 1px solid #ccc;
@@ -74,7 +75,7 @@ vanillaJS로 제작된 기본 탭 메뉴
 }
 ```
 
-# javascript
+# JavaScript
 ```javascript
 window.addEventListener('load', function(){
 

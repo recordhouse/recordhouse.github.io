@@ -1,16 +1,16 @@
 ---
 layout: post
-title: var, let, const 차이
+title: "[JavaScript] var, let, const 차이"
 date: 2019-06-05 08:12:48
 modified: 2019-06-05 08:12:48
 tag: [javascript]
 ---
 
+# 정의
 `var`는 변수를 선언하는 키워드이며, ES6부터 `let`과 `const`가 추가되었다.
-`var`는 함수 스코프를 가지고 `let`과 `const`는 블록 스코프를 가진다. 여기서 스코프란 코드가 실행되는 유효범휘이다.
+`var`는 함수 스코프를 가지고 `let`과 `const`는 **블록 스코프**를 가진다. 여기서 스코프란 코드가 실행되는 유효범휘이다.
 
-## 블록 스코프
-블록 스코프는 중괄호{}로 감싸진 범위를 말한다. 아래는 조건문(if), 반복문(for), 함수(function)가 블록 스코프를 가지고 있는 모습이다.
+> 블록 스코프는 중괄호{}로 감싸진 범위를 말한다. 아래는 조건문(if), 반복문(for), 함수(function)가 블록 스코프를 가지고 있는 모습이다.
 
 ```javascript
 if (true) {
@@ -26,7 +26,7 @@ function func() {
 }
 ```
 
-### var
+## var
 기존의 `var`는 위 세개중 함수에서만 스코프를 가진다.
 
 ```javascript
@@ -58,7 +58,7 @@ console.log(a);
 // 2
 ```
 
-### let, const
+## let, const
 ES6부터 추가된 `let`, `const`는 조건문과 반복문에도 스코프를 가진다.
 
 ```javascript
@@ -108,12 +108,10 @@ b = 2;
 // Uncaught TypeError: Assignment to constant variable.
 ```
 
-## 결론
-
+# 결론
 * `var`은 함수 스코프에서만 유효
 * `let`, `const`는 블록 스코프에서 유효
 * `const`는 선언과 동시에 할당이 일어나야하고, 재할당이 불가
 
-## References
+# References
 [자바스크립트 변수와 스코프(유효범위)](https://yuddomack.tistory.com/entry/자바스크립트-변수와-스코프유효범위)
-

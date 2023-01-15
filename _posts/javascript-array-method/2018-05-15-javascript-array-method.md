@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 배열 메서드
+title: "[JavaScript] 배열 메서드"
 date: 2018-05-15 21:49:54
 modified: 2018-05-15 21:49:54
 tag: [javascript]
 ---
 
-자바스크립트에서 자주 쓰이는 배열 메서드 정리
+실제 사용되는 배열 메서드는 훨씬 많지만 간략하게라도 아래에 정리하였다.
 
-## concat()
+# concat
 배열을 하나로 합칠 때 사용한다. 인자로 들어온 배열의 순서대로 합쳐진다.
 
 ```javascript
@@ -25,7 +25,7 @@ console.log(arr1);
 // (3) [1, 2, 3]
 ```
 
-## forEach()
+# forEach
 주어진 함수를 배열 요소 각각에 대해 실행한다.
 
 ```javascript
@@ -39,7 +39,7 @@ arr.forEach(function (element) {
 });
 ```
 
-## map()
+# map
 배열을 반복하고, 콜백함수가 리턴한 값으로 새 배열을 반환한다.
 
 ```javascript
@@ -59,7 +59,7 @@ console.log(usersName);
 // (4) ["철수", "영희", "민수", "주연"]
 ```
 
-## filter()
+# filter
 배열을 반복하고, 콜백함수의 리턴값이 true인 요소로만 구성된 새 배열을 반환한다. 아래 예제는 age가 23 초과인 요소만 반환하였다.
 
 ```javascript
@@ -82,7 +82,7 @@ console.log(usersOld);
 // __proto__: Array(0)
 ```
 
-## sort()
+# sort
 배열을 반복하고, 콜백함수의 리턴값이 true인 요소로만 구성된 새 배열을 반환한다. 아래 예제는 age가 23 초과인 요소만 반환하였다.
 
 ```javascript
@@ -103,7 +103,7 @@ console.log(arr);
 // (6) [10, 5, 4, 3, 2, 1]
 ```
 
-## indexOf()
+# indexOf
 인자로 전달된 요소와 매치되는 첫번째 요소의 인덱스를 반환한다. 일치하는 요소가 없으면 -1을 반환한다.
 
 ```javascript
@@ -113,7 +113,7 @@ console.log(arr.indexOf('c')); // 2
 console.log(arr.indexOf('e')); // -1
 ```
 
-## every()
+# every
 함수의 리턴값이 false가 될 때 까지 배열 요소 각각에 대해 함수를 실행한다.
 
 ```javascript
@@ -128,8 +128,7 @@ arr.every(function(element) {
 });
 ```
 
-## References
+# References
 [JavaScript 배열 메서드 ( Array method )](https://takeuu.tistory.com/102)  
 [Array.prototype.forEach()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)  
 [알아두면 좋은 자바스크립트 배열 메서드](https://medium.com/@ryuhangyeong00/알아두면-좋은-자바스크립트-배열-메서드-7cd469de880c)
-

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 프로토타입(Prototype)
+title: "[JavaScript] 프로토타입(Prototype)"
 date: 2018-12-17 08:16:45
 modified: 2018-12-17 08:16:45
 tag: [javascript]
 ---
 
-자바스크립트는 클래스라는 개념이 없다. 클래스는 자바, 파이썬, 루바 등 객체지향 언어에서 빠질수 없는 개념이다. 하지만 자바스크립트도 객체지향언어인데, 클래스 대신 프로토타입(Prototype)을 기반으로 클래스의 상속 기능을 흉내내도록 구현하여 사용한다. 그래서 자바스크립트는 프로토타입 기반의 객체 지향 언어라고 한다.
+# 정의
+자바스크립트는 클래스라는 개념이 없다. 클래스는 자바, 파이썬, 루바 등 객체지향 언어에서 빠질수 없는 개념이다. 하지만 자바스크립트도 객체지향언어인데, 클래스 대신 프로토타입(Prototype)을 기반으로 클래스의 상속 기능을 흉내내도록 구현하여 사용한다. 그래서 자바스크립트는 프로토타입 기반의 객체 지향 언어라고 한다.  
 
 자바스크립트의 모든 객체는 자신의 부모역할을 담당하는 객체와 연결되어 있다. 이것은 마치 객체 지향의 상속 개념과 같이 부모 객체의 프로퍼티 또는 메서드를 상속받아 사용할 수 있게 한다. 이러한 부모 객체를 프로토타입 이라 한다.
 
@@ -135,7 +136,7 @@ console.log(kang.__proto__);
 
 `kang.__proto__` 속성을 확인해보니 프로토타입 객체를 가르키고 있다. `kang`객체는 직접 `eyes`속성을 가지고 있지 않아 `eyes`속성을 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 `Object`의 프로토타입 객체까지 도달했는데도 못찾을 경우 `undefined`를 리턴한다. 이렇게 `__proto__`속성을 통해 상위 프로토타입과 연결되어있는 형태를 프로토타입 체인이라고 한다. 이런 프로토타입 체인 구조 때문에 모든 객체는 `Object`의 자식이라고 하며, `Object`에 있는 모드 속성을 사용할 수 있다.
 
-## References
-[[Javascript ] 프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-이해하기-f8e67c286b67)  
+# References
+[[Javascript] 프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-이해하기-f8e67c286b67)  
 [Javascript 기초 - Object prototype 이해하기](http://insanehong.kr/post/javascript-prototype)  
 [JavaScript : 프로토타입(prototype) 이해](http://www.nextree.co.kr/p7323)

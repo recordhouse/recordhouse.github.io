@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 슬라이드 배너(slide banner)
+title: "[UI] 슬라이드 배너(Slide Banner)"
 date: 2019-04-10 08:24:06
 modified: 2019-04-10 08:24:06
-tag: [ui, vanillajs]
+tag: [ui, javascript, vanillajs]
 ---
 
+# 설명
 vanillaJS로 만들어본 기본 슬라이드 배너
 
 # 조건
@@ -22,7 +23,7 @@ vanillaJS로 만들어본 기본 슬라이드 배너
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-# html
+# HTML
 ```html
 <div id="slide">
   <ul class="cnt">
@@ -42,7 +43,7 @@ vanillaJS로 만들어본 기본 슬라이드 배너
 </div>
 ```
 
-# css
+# CSS
 ```css
 #slide {
   position: relative;
@@ -139,7 +140,7 @@ vanillaJS로 만들어본 기본 슬라이드 배너
 }
 ```
 
-# javascript
+# JavaScript
 ```javascript
 window.addEventListener("load", function () {
   var MOVEING_PX = 4,

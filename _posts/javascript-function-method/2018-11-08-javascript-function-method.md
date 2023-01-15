@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 함수 메서드(call, apply, bind)
+title: "[JavaScript] 함수 메서드(call, apply, bind)"
 date: 2018-11-08 08:11:18
 modified: 2018-11-08 08:11:18
 tag: [javascript]
 ---
 
-함수의 기본 메서드중 call, apply, bind 에 대해 알아보겠다.
-
+# 정의
+함수의 기본 메서드중 call, apply, bind 에 대해 보자.  
 자바스크립트에서 상속개념을 자주 쓰다보면 불필요한 메서드에 프로토타입까지 상속받아 오기 때문에 메모리 낭비가 심해진다. 이때 다른 객체의 메서드를 가져와 쓸 수 있는데 그 기능을 가진 메서드가 call과 apply 이다. call 메서드 먼저 살펴보겠다.
 
-## call
+# call
 
 ```
 func.call(obj, a, b);
@@ -19,6 +19,8 @@ call = call 메서드
 obj = 메서드를 사용할(현재) 객체
 a, b = 메서드에 전달할 인자
 ```
+
+기본 정의는 위와 같으며 아래 코드에서 자세히 살펴볼 수 있다.
 
 ```javascript
 var obj1 = {
@@ -47,7 +49,7 @@ console.log(obj1.funcThis.call(obj2)); // Object {name: "obj2"}
 
 call 메서드를 이용하여 obj1 의 funcThis 메서드를 obj2 객체에서 실행한다. obj2객체를 리턴하고 있다. 아무 값을 안넣으면(null) window를 반환한다. call 과 형제격인 apply 메서드는 call 메서드와 같지만 한가지 다른점이 있다. call은 인자값을 하나 하나 전달하지만 apply 메서드는 인자값을 배열로 전달한다.
 
-## apply
+# apply
 
 ```
 func.apply(obj, [arr]);
@@ -76,6 +78,8 @@ start = 필수. 지정된 부분의 시작입
 start = 선택. 지정된 부분의 끝
 ```
 
+기본 정의는 위와 같으며 아래 코드에서 자세히 살펴볼 수 있다.
+
 ```javascript
 function func() {
     console.log(Array.prototype.join.call(arguments));
@@ -91,7 +95,7 @@ obj = 필수. 반환할 배열 객체
 val = 선택. 추가할 문자열 이다. 아무값도 안넣을 경우 쉼표(,)로 대체된다.
 ```
 
-## bind
+# bind
 
 bind 함수는 함수가 가르키는 this만 바꾸고 호출은 하지 않는다.
 
