@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Vercel] Vercel에 JSON Server 배포"
+title: "[Server] Vercel에 JSON Server 배포"
 date: 2022-12-11 21:04:48
 modified: 2022-12-11 16:49:47
-tag: [vercel, server]
+tag: [vercel, json-server]
 ---
 
 Heroku는 2022년 11월을 기준으로 유로로 변경되었기 때문에 무료로 서버를 배포할 플랫폼을 찾던중 Vercel를 알게되었다. JSON Server와 Vercel를 이용하면 간략한 서버를 구축 및 배포할 수 있다.
