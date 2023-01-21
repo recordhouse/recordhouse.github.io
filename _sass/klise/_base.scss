@@ -17,7 +17,6 @@
 
 html {
   overflow-x: hidden;
-  overflow-y: scroll;
   width: 100%;
 }
 
@@ -45,7 +44,6 @@ figure {
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
   position: relative;
   color: $text-base-color;
   background-color: $white;
@@ -370,16 +368,16 @@ mark,
 }
 
 // Scroll Bar
-html::-webkit-scrollbar {
+.scroll-bar::-webkit-scrollbar {
   width: 8px;
 }
 
-html::-webkit-scrollbar-thumb {
+.scroll-bar::-webkit-scrollbar-thumb {
   height: 20%;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-html::-webkit-scrollbar-track {
+.scroll-bar::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
