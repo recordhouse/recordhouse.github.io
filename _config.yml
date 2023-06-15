@@ -25,6 +25,7 @@ url: "https://seongjukang.github.io/" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
+google_site_verification: gOB7WBw12o6eOpCGMuI7JxwKgYBYJGU6saglO4mZsHk
 fb_appid:
 
 # Collection setting
