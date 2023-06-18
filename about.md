@@ -6,8 +6,8 @@ excerpt: Front-End Technology Blog
 comments: false
 ---
 
-Thank you for visiting my site.
-I am a front-end developer who is interested in user experience.
+Thank you for visiting my site.  
+I am a front-end developer who is interested in user experience.  
 If you have any questions about me, please contact me below.
 
 **may u needs ✨**
