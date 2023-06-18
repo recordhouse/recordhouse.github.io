@@ -6,13 +6,13 @@ lang: en-US # default lang
 timezone: Asia/Seoul # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/seongjukang/seongjukang.github.io # site repo [optional]
-mode: light # default theme "dark" | "light"
+mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
   name: Seongju Kang # author name
   bio: >- # tell to the world
-    Software Engineer
+    Front-End Developer
   username: Seongju Kang  # general username
   github: seongjukang # github username
   # twitter: twitter_username # twitter username

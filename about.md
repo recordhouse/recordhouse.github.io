@@ -6,10 +6,9 @@ excerpt: Front-End Technology Blog
 comments: false
 ---
 
-Thank you for visiting my site. 
-I am a front-end engineer who loves UX design.
-We are thinking about the pattern of thinking from the user's point of view and providing various contents.
-If you are interested in me, please contact me below.
+Thank you for visiting my site.
+I am a front-end developer who is interested in user experience.
+If you have any questions about me, please contact me below.
 
 **may u needs ✨**
 - **GitHub**: [https://github.com/seongjukang](https://github.com/seongjukang)
