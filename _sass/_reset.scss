@@ -1,3 +1,14 @@
+/* font */
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NanumBarunGothic'), local('NanumBarunGothic'),
+    url(../fonts/NanumBarunGothic.eot),
+    url(../fonts/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NanumBarunGothic.woff) format('woff'),
+    url(../fonts/NanumBarunGothic.otf) format('opentype');
+}
 
 /***************/
 /* MEYER RESET */
