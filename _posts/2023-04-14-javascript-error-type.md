@@ -123,7 +123,7 @@ Uncaught RangeError: Maximum call stack size exceeded
 
 <br>
 
-# References
+## References
 [MDN Web Docs - Error](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Error)  
 [자주 발생하는 자바스크립트 에러](https://blog.shiren.dev/2021-06-29/)  
 [자바스크립트 오류 확인하는 방법과 7가지 오류 유형](https://hongong.hanbit.co.kr/크롬으로-자바스크립트-오류-확인하는-방법과-7가지/)

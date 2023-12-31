@@ -6,7 +6,7 @@ modified: 2022-11-29 18:21:25
 tag: [javascript]
 ---
 
-# 문자열이 공백인지 체크하는 함수
+## 문자열이 공백인지 체크하는 함수
 검색창 구현하다 필요해서 구글링해서 줍줍
 
 ```javascript
@@ -26,5 +26,5 @@ function checkSpaceStr(str) {
 }
 ```
 
-# References
+## References
 [회원가입에서 공백, 특수문자 검사하기](https://escapefromcoding.tistory.com/289)
