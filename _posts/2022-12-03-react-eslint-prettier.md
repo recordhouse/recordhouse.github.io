@@ -7,6 +7,7 @@ tag: [react, eslint, prettier]
 ---
 
 ## 1. CRA 설치 및 eslint & pritere 설치
+
 ```
 $ create-react-app ./
 $ npm install -D prettier eslint-config-prettier eslint-plugin-prettier

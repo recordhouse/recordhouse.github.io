@@ -8,7 +8,7 @@ tag: [javascript]
 
 자바스크립트에서 에러가 발생하면 코드는 멈추게 되고, 콘솔에 에러가 출력된다. 하지만 `try...catch` 문법을 사용하면 스크립트가 죽는 것을 방지하고, 에러 상황을 잡아 예외처리를 할 수 있게 한다. 기본적인 형태는 두 블록으로 구성되며 예시 코드는 아래와 같다.
 
-# 기본 형태
+## 기본 형태
 ```javascript
 try {
 
@@ -46,7 +46,7 @@ try {
 
 `try` 블록에서 에러가 나면 아래의 `console.log()`는 실행이 안되며 바로 `catch` 블록으로 넘어간다. `err` 객체가 콘솔창에 어떤 에러인지 표시해 주며, 에러가 발생해도 `catch` 블록의 코드는 계속 실행되는 것을 확인할 수 있다. 이 부분에 에러 예외 처리를 작성해 주면 된다.
 
-# `try...catch`는 런타임 에러에만 작동한다
+## `try...catch`는 런타임 에러에만 작동한다
 
 `try...catch`는 실행이 가능한 코드에만 동작하며, 중괄호가 들어가는 등 자바스크립트 엔진이 해석할 수 없는 문법적 오류(SyntaxError)같은 경우는 작동하지 않는다.
 
@@ -64,7 +64,7 @@ try {
 }
 ```
 
-# `try...catch`는 동기적으로 동작한다
+## `try...catch`는 동기적으로 동작한다
 
 `try...catch`는 `setTimeout`와 같이 비동기적으로 실행되는 코드의 에러는 잡아낼 수 없다.
 
@@ -102,7 +102,7 @@ setTimeout(() => {
 }, 1000);
 ```
 
-# 에러 객체
+## 에러 객체
 
 에러가 발생하면 자바스크립트는 에러 내용이 담긴 객체를 생성하고 `catch` 블록의 인수로 전달한다.
 
@@ -121,8 +121,8 @@ try {
 ```
 `name` 프로퍼티는 에러의 이름을 나타내고 `message`는 에러에 대한 상세 내용을 가지고 있다.
 
-# 직접 에러를 생성해 던지기
-## throw 연산자
+## 직접 에러를 생성해 던지기
+### throw 연산자
 
 `throw` 연산자는 예외를 던질 수 있으며, `catch` 블록에 전달된다.
 > `throw` 연산자는 함수의 실행을 중단한다는 표현과 같다.
@@ -143,7 +143,7 @@ try {
 
 위 코드에서 `throw`는 예외를 던지고 있으며, `throw` 아래의 로직은 실행이 안된다. `throw` 연산자자와 에러 객체 생성자를 이용하여 예외 처리를 해보자.
 
-## 에러 객체 생성자
+### 에러 객체 생성자
 
 ```javascript
 const error = new Error("에러 발생");
@@ -155,7 +155,7 @@ console.log(syntaxError); // SyntaxError: 문법 에러 발생
 
 자바스크립트는 `Error`, `SyntaxError`, `ReferenceError`, `TypeError` 등 표준 애러 객체 생성자를 지원하며, 이 생성자들을 이용해 에러 객체를 만들 수 있다.
 
-## 생성한 에러 던지기
+### 생성한 에러 던지기
 
 ```javascript
 const person = {
@@ -182,7 +182,7 @@ try {
 
 > 참고로 위 에러는 직접 생성한 에러이기 때문에 실제 `SyntaxError` 에러는 아니다.
 
-# 에러 다시 던지기
+## 에러 다시 던지기
 
 `try...catch`는 애초에 `try` 블록에서 발생한 모든 에러를 잡는 목적으로 만들어졌다. 에러의 종류와 상관 없이 모든 에러를 잡는것은 디버깅에 어려움을 주기 때문에 예상치 못한 에러를 다시 던져서 에러의 종류에 따라 대응을 해줘야 한다.
 
@@ -218,7 +218,7 @@ try {
 
 `getError()`가 실행되면서 `SyntaxError`를 잡아내고 있으며, 만약 `SyntaxError` 에러가 아닐 경우는 다시 에러를 함수 밖으로 던지며, 함수 외부에서 에러를 다시 잡고 있다. 함수 밖에서는 `ReferenceError`일 경우를 잡아내고 있다. `SyntaxError`일 경우는 함수 내부에서 에러를 잡고 `ReferenceError`일 경우는 함수 외부에서 잡는다고 보면 된다.
 
-# finally
+## finally
 `finally`절은 에러의 유무와 상관없이 마지막으로 사용되는 블록이며, 마지막 제어가 필요할 때 사용하면 된다.
 
 ```javascript
@@ -237,7 +237,7 @@ try {
 }
 ```
 
-# References
+## References
 ['try..catch'와 에러 핸들링](https://ko.javascript.info/try-catch)  
 [에러 처리를 어떻게 하면 좋을까? - 1](https://rinae.dev/posts/how-to-handle-errors-1)  
 [예외 ( throw,[try/catch/finally])](https://www.opentutorials.org/module/4302/26560)
