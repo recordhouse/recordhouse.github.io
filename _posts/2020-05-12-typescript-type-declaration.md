@@ -6,8 +6,8 @@ modified: 2020-05-12 10:46:47
 tag: [typescript, javascript]
 ---
 
-# 타입 기본
-## 타입 지정
+## 타입 기본
+### 타입 지정
 타입스크립트는 일반 변수, 매개 변수, 객체 속성 등에`: TYPE`과 같은 형태로 타입을 지정할 수 있다.
 
 ```javascript
@@ -18,7 +18,7 @@ let d: any = true; // 어떤 타입이 올지 모를 때
 let e: string | number = '0'; // 문자열이나 숫자가 올 때
 ```
 
-## 타입 에러
+### 타입 에러
 만약 아래와 같이 타입을 선언하고 다른 타입의 값을 대입하거나 값이 선언된 후에 다른 타입의 값이 대입되면 에러를 발생한다.
 
 ```javascript
@@ -32,7 +32,7 @@ b = 1; // error Type '1' is not assignable to type 'string'.  TS2322
 
 출력창에서 `TS2322`라는 에러 코드를 볼 수 있으며, 이를 검색하면 쉽게 에러 코드에 대한 정보를 얻을 수 있다.
 
-# 타입 선언
+## 타입 선언
 타입스크립트는 ES5, ES6의 상위 확장인 언어이므로 자바스크립트의 타입을 그대로 사용하며, 이외에도 타입스크립트의 고유의 타입이 추가로 제공된다.
 
 | Type | JS | TS | Description |
@@ -51,27 +51,27 @@ b = 1; // error Type '1' is not assignable to type 'string'.  TS2322
 | void |  | ◯ | 일반적으로 함수에서 반환값이 없을 경우 사용 |
 | never |  | ◯ | 결코 발생하지 않는 값 |
 
-## 논리형(Boolean)
+### 논리형(Boolean)
 ```javascript
 let bool01: boolean = true;
 let bool02: boolean = false;
 ```
 
-## 숫자형(Number)
+### 숫자형(Number)
 ```javascript
 let num01: number = 5;
 let num02: number = 3.14;
 let num03: number = NaN;
 ```
 
-## 문자열(String)
+### 문자열(String)
 ES6의 템플릿 문자열도 지원한다.
 ```javascript
 let str01: string = 'text';
 let str02: string = `my name is ${val}`;
 ```
 
-## 배열(Array)
+### 배열(Array)
 배열은 아래와 같이 두가지 방법으로 타입을 선언할 수 있다.
 ```javascript
 // 문자열만 가지는 배열
@@ -91,7 +91,7 @@ let arr07: (any)[] = [1, 'a', 2, 'b', 'c', 3];
 let arr08: Array<any> = [1, 'a', 2, 'b', 'c', 3];
 ```
 
-## 함수(Function)
+### 함수(Function)
 함수는 파라미터에 각각 타입을 선언해 주며, 파라미터 우측에는 해당 함수의 리턴값 타입도 선언해 주면 된다.
 ```javascript
 function sum(a: number, b: number): number {
@@ -107,7 +107,7 @@ function sum(a: number, b: number): number {
 }
 ```
 
-## 객체(Object)
+### 객체(Object)
 기본적으로 typeof 연산자가 `object`로 반환하는 모든 타입을 나타낸다. 여러 타입의 상위 타입이기 때문에 그다지 유용하지 않다.
 
 ```javascript
@@ -127,7 +127,7 @@ let user: { name: string, age: number } = {
 console.log(user); // {name: "a", age: 20}
 ```
 
-## 튜플(Tuple)
+### 튜플(Tuple)
 배열과 유사하다. 차이점은 정해진 타입의 요소 개수 만큼의 타입을 미리 선언후 배열을 표현한다.
 ```javascript
 let tuple: [string, number];
@@ -172,7 +172,7 @@ user.push(30);
 console.log(user); // ["a", 20, 30]
 ```
 
-## 열거형(Enum)
+### 열거형(Enum)
 숫자 혹은 문자열 값 집합에 이름을 부여할 수 있는 타입으로, 값의 종류가 일정한 범위로 정해져 있는 경우 유용하다. 기본적으로 0부터 시작하며, 값은 1씩 증가한다.
 
 ```javascript
@@ -210,7 +210,7 @@ console.log(obj.b); // 10
 console.log(obj.c); // 11
 ```
 
-## 모든 타입(Any)
+### 모든 타입(Any)
 Any는 모든 타입을 의미하며, 기존의 자바스크립트 변수와 마찬가지로 어떠한 타입의 값도 할당할 수 있다. 불가피하게 타입을 선언할 수 없는 경우, 유용할 수 있다.
 
 ```javascript
@@ -221,7 +221,7 @@ any = true;
 console.log(any); // true
 ```
 
-## 빈 타입(Void)
+### 빈 타입(Void)
 빈 타입인 Void는 리턴값이 없는 함수에서 사용된다. 리턴값의 타입을 명시하는 곳에 작성하며, 리턴값이 없는 함수는 `undefined`를 반환한다.
 
 ```javascript
@@ -231,7 +231,7 @@ function hello(): void {
 console.log(hello()); // undefined
 ```
 
-## never
+### never
 Never 타입은 절대 발생할 수 없는 타입을 나타낸다.
 
 ```javascript
@@ -243,7 +243,7 @@ console.log(errorMsg()); // Uncaught Error: 오류 발생!
 
 `errorMsgd` 함수는 오류를 발생시키기 때문에 `null`, `undefined`를 포함한 어떠한 값도 반환하지 않는다. 이럴 경우 never 타입을 사용하면 된다.
 
-# References
+## References
 [한눈에 보는 타입스크립트(updated)](https://heropy.blog/2020/01/27/typescript/)  
 [정적 타이핑](https://poiemaweb.com/typescript-typing)  
 [타입스크립트 기초 연습](https://velog.io/@velopert/typescript-basics)  
