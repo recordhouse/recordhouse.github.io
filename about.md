@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+기록 전용 블로그
 
-### More Information
+## Contact me
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+- **GitHub**: [https://github.com/recordboy](https://github.com/recordboy)
+- **Linkedin**: [https://www.linkedin.com/in/seongjukang](https://www.linkedin.com/in/seongjukang)
+- **E-mail**: [ksj_design@naver.com](mailto:ksj_design@naver.com)
+- **Phone**: 010 2654 9876

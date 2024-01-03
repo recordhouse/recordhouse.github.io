@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post### 
 title: "[ESLint] ESLint, Prettier 적용하기"
 date: 2020-07-06 19:54:44
 modified: 2020-07-06 19:54:44
@@ -8,7 +8,7 @@ tag: [eslint, prettier, tools, module, extension]
 
 자바스크립트 개발을 하다 보면 문법 오류나 코드 정리로 인해 시간을 많이 소비한다. `ESLint`와 `Prettier`는 이러한 상황을 해결해 주는 도구들이며, VSCode, WebStorm, Atom 등 여러 에디터와 연동해 사용이 가능하다. 이번 포스팅에서는 두가지 도구를 간단히 살펴보고 리액트 프로젝트에 적용하는 방법을 알아보겠다. 에디터는 VSCode를 기준으로 하겠다.
 
-# ESLint
+## ESLint
 ESLint는 ES + Lint의 합성어로 ES는 EcmaScript를 의미하고 Lint는 보푸라기라는 뜻인데, 프로그래밍에서는 에러가 있는 코드에 표시를 달아 놓는 것을 의미한다. 즉 ESLint는 JavaScript의 스타일 가이드를 따르지 않거나 문제가 있는 안티 패턴들을 찾아주고 일관된 코드 스타일로 작성하도록 도와준다. 코딩 컨벤션 및 안티 패턴을 자동 검출 하므로 옮바른 코딩 습관을 위해 필히 사용할 것을 권장한다.  
 
 ESLint는 스타일 가이드를 편리하게 적용하기 위해 사용되기도 하는데, 많은 개발자가 사용중인 [Airbnb Style Guide](https://github.com/airbnb/javascript), [Google Style Guide](https://github.com/google/eslint-config-google)가 대표적인 예이다.  
@@ -29,14 +29,14 @@ let foo = text;;
 
 문자열에 따옴표도 없고, 세미콜론도 두개고, 변수에 값이 할당되어도 사용이 안되는 엉망인 코드를 작성하였다. 그냥 js 파일은 문법적 오류를 따로 잡아주지 않을 것이다.
 
-## ESLint 설치
+### ESLint 설치
 npm 프로젝트를 하나 생성하고 ESLint를 설치하도록 하겠다.
 
 ```
 $ npm init -y
 $ npm i -D eslint
 ```
-### 축약법 간단 설명
+#### 축약법 간단 설명
 1. `npm init -y` 명령어에 `-y`는 `--yes`의 축약법으로 npm 프로젝트를 초기 세팅할 때 아무 질문 없이 기본값으로 프로젝트가 세팅된다. 비슷한 명령어로` --force(-f)`가 있다.
 2. `npm i -D eslint` 명령어의 `-D`는 `--save-dev`의 축약법이며, 비슷한 옵션으로 `--save`가 있다. 차이는 아래를 참고한다.
 3. `--save-dev`는 설치한 패키지 정보를 `./package.json` 파일의 `devDependencies` 항목에 저장하며, npm install을 할 때 해당 패키지가 같이 설치된다. 설치할 때 `--production` 옵션을 붙이면 해당 패키지를 제외하고 npm이 설치된다.
@@ -91,7 +91,7 @@ module.exports = {
 
 설정 규칙 및 리스트는 상당히 방대하며, [ESLint 공식 레퍼런스](https://eslint.org/docs/rules/)에서 참고 가능하다.
 
-## ESLint 검사
+### ESLint 검사
 이제 위에서 엉망으로 작성한 test.js 파일을 아래 명령어를 사용하여 검사해 보자.
 
 ```
@@ -136,7 +136,7 @@ $ node_modules/.bin/eslint test.js --fix
 $ npm run lint
 ```
 
-# Prettier
+## Prettier
 Prettier는 기존의 코드에 적용되어있던 스타일들을 전부 무시하고, 정해진 규칙에 따라 자동으로 코드 스타일을 정리해 주는 코드 포멧터이다.
 
 > 코드 포멧터(Code Formatter)란 개발자가 작성한 코드를 정해진 코딩 스타일을 따르도록 변환해주는 도구를 말한다.
@@ -155,7 +155,7 @@ foo
 return     foo}
 ```
 
-## Prettier 설치
+### Prettier 설치
 Prettier을 아래 명령어로 설치해 준다.
 
 ```
@@ -164,7 +164,7 @@ $ npm i prettier -D -E
 
 > 위 명령어중 `-E`는 `--save-exac`의 축약법이다. 위 ESLint 모듈을 설치할때와 다르게 Prettier에서는 이 옵션을 붙이는 것을 권장하는데, 버전이 달라지면서 생길 스타일 변화를 막기 위해서라고 한다.
 
-## Prettier 실행
+### Prettier 실행
 
 ```
 $ npx prettier test.js
@@ -196,10 +196,10 @@ let func = function () {
 
 이제 리액트 프로젝트에 ESLint와 Prettier를 적용하는 방법을 알아보겠다.
 
-# 리액트에 ESLint와 Prettier 적용하기
+## 리액트에 ESLint와 Prettier 적용하기
 이 포스팅에서는 CRA(Create React App)을 이용하여 생성한 리액트 프로젝트를 기준으로 한다. 아래 명령어를 사용하여 리액트 프로젝트를 생성한다.
 
-## 리액트 프로젝트 생성
+### 리액트 프로젝트 생성
 
 **자바스크립트 사용 경우**
 ```
@@ -237,12 +237,12 @@ That will permanently disable this message but you might encounter other issues.
 
 이는 기본 탑재되는 node_module과 수동설치한 node_module의 버전 호환성 문제이며 터미널 경고 아래에 해결 방법이 나온다. CRA로 생성된 프로젝트는 ESLint를 따로 설치를 하지 않도록 한다.
 
-## Prettier 설치
+### Prettier 설치
 ```
 $ npm i prettier -D -E
 ```
 
-## 필요한 추가 모듈
+### 필요한 추가 모듈
 Prettier와 ESLint를 같이 사용하려면 아래 모듈을 추가로 설치해야 한다.
 
 * **eslint-config-prettier**
@@ -268,10 +268,10 @@ $ npm i eslint-plugin-prettier eslint-config-prettier -D
 }
 ```
 
-## ESLint, Prettier 익스텐션 설치
+### ESLint, Prettier 익스텐션 설치
 Node 모듈을 설치했으니, 이제 VSCode와 같이 사용할 때 필요한 익스텐션을 설치하고 설정을 바꿔주자. VSCode의 Extensions: Marketplace로 들어가서 ESLint와 Prettier를 검색하여 설치한다.
 
-## VSCode 설정
+### VSCode 설정
 VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도록 설정해보자. VSCode 설정(윈도우, 리눅스에서는 Ctrl + , 맥에서는 Cmd + ,)으로 들어간다. 설정으로 들어가면 Search settings 입력창 아래에 User와 Workspace 항목이 있다. User는 VSCode 자체 설정으로 모든 프로젝트에 적용이 되고, Workspace는 현재 프로젝트에서만 설정이 적용되며, `.vscode/settings.json`에 설정 항목이 저장된다. ESLint와 Prettier의 경우 프로젝트별로 설정이 다른경우가 많이 때문에 작업공간마다 설정파일을 따로 관리하는 것을 선호한다. 설정은 json파일에 직접 입력이 가능하며, 우측 상단에 종이 모양의 Open Setting(JSON)아이콘을 클릭하면 `settings.json`파일이 열린다. 아래처럼 설정한다.
 
 ```javascript
@@ -289,10 +289,10 @@ VSCode에서 파일을 저장할 때마다 자동으로 코드가 수정되도�
 }
 ```
 
-## ESLint 설정
+### ESLint 설정
 [ESLint 규칙](https://eslint.org/docs/rules/)은 상당히 방대하며, 모든것을 다 바꾸기 어렵기 때문에 여러가지 규칙을 정해준 모음이 있는데 위에서 언급한 Airbnb Style Guide나 Google Style Guide가 있다. 여기선 Airbnb를 적용해 보겠다.
 
-### Airbnb Style Guide 적용
+#### Airbnb Style Guide 적용
 아래 명령어를 사용하여 Airbnb를 설치해준다.
 
 ```
@@ -315,7 +315,7 @@ $ npm i -D eslint-config-airbnb
 
 `App.js`파일을 열어보면 빨간줄이 엄청 그어져 있을 것이다. Airbnb의 규칙이 상당히 까다롭기 때문이다. 꼭 Airbnb 규칙을 따를 필요는 없다. [ESLint 문서](https://eslint.org/docs/user-guide/configuring)에서 본인 스타일에 맞는 스타일을 찾거나 수정하여 사용하면 된다.
 
-## Prettier 설정
+### Prettier 설정
 ESLint 설정 파일과 마찬가지로 루트 경로에 `.prettierrc.json`을 만들어 준다. [Prettier의 옵션 문서](https://prettier.io/docs/en/options.html)에서 필요한 옵션을 골라 설정해 주면 된다. 아래는 간단한 예시이다.
 
 ```json
@@ -327,7 +327,7 @@ ESLint 설정 파일과 마찬가지로 루트 경로에 `.prettierrc.json`을 �
 }
 ```
 
-# References
+## References
 [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
 [[자바스크립트] Prettier로 코딩 스타일 통일하기](https://www.daleseo.com/js-prettier/)  
 [VS Code에서 ESlint와 Prettier 함께 사용하기](https://feynubrick.github.io/2019/05/20/eslint-prettier.html)  

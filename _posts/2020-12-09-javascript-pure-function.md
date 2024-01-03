@@ -135,6 +135,7 @@ console.log(obj); // { a: 1 }
 ## 결론
 모든 함수가 순수 할수일 수는 없다. 모든 함수가 순수 함수라면 외부의 어떤 데이터에도 변형을 주지 않기 때문에 프로그램은 구동되지 않을 것이다. 단지, 이런 스타일로 코딩하는것이 함수형 프로그래밍의 패러다임 이며, 이 패러다임의 목적은 외부 상태의 변화를 최소함으로 유지하고, 함수 실행 결과 예측을 용이하게 하여 버그 발생 가능성을 줄이는 것에 목적이 있다.
 
+## References
 [[번역] JavaScript 함수형 프로그래밍 3단계로 설명하기](https://blog.ull.im/engineering/2019/04/07/functional-programming-with-javascript-in-3-steps.html)  
 [순수 함수란 무엇인가요... 별거 없음...](https://mrgamza.tistory.com/634)  
 [JS 함수형 프로그래밍을 위한 사전 지식 : 순수함수, 일급함수](https://darrengwon.tistory.com/595)  
