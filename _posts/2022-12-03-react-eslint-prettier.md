@@ -6,14 +6,13 @@ modified: 2022-12-02 12:34:11
 tag: [react, eslint, prettier]
 ---
 
-#### 1. CRA 설치 및 eslint & pritere 설치
-
+## 1. CRA 설치 및 eslint & pritere 설치
 ```
 $ create-react-app ./
 $ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
-#### 2. root 경로에 `.eslintrc` 파일 생성 및 아래 내용 입력(window && mac 같이 사용하는 경우)
+## 2. root 경로에 `.eslintrc` 파일 생성 및 아래 내용 입력(window && mac 같이 사용하는 경우)
 ```json
 // .eslintrc
 {
@@ -43,7 +42,7 @@ $ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-#### 3. root 경로에 `.prettierrc` 파일 생성 및 아래 내용 입력
+## 3. root 경로에 `.prettierrc` 파일 생성 및 아래 내용 입력
 ```json
 // .prettierrc
 {
@@ -54,7 +53,7 @@ $ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-#### 4. `.vscode` 폴더 생성 뒤 VSCode에 적용할 설정 JSON 추가
+## 4. `.vscode` 폴더 생성 뒤 VSCode에 적용할 설정 JSON 추가
 ```json
 // .vscode/settings.json
 {
@@ -70,7 +69,7 @@ $ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-#### 5. 라우터 && 스타일 컴포넌트 설치(선택사항)
+## 5. 라우터 && 스타일 컴포넌트 설치(선택사항)
 ```
 $ npm i react-router-dom
 $ npm i styled-components

@@ -7,7 +7,6 @@ tag: [git, windows]
 ---
 
 ## 1. 현재 깃에 설정된 계정/메일 확인
-
 ```
 $ git config user.name
 $ git config user.email
