@@ -79,6 +79,7 @@
     padding: 5px 8px;
     opacity: 0.7;
     letter-spacing: 0.3px;
+    outline: none;
 
     &:hover {
       opacity: 1;
@@ -191,9 +192,7 @@
   .author-avatar {
     width: 80px;
     height: 80px;
-    border-radius: 100%;
     user-select: none;
-    background-color: $black;
     -ms-user-select: none;
     -webkit-user-select: none;
     -webkit-animation: 0.5s ease-in forwards fadein;
@@ -257,6 +256,7 @@
 
     a {
       color: $text-base-color;
+      outline: none;
 
       &:hover,
       &focus {
@@ -285,6 +285,7 @@
     color: $black;
     opacity: 0.8;
     text-decoration: none;
+    outline: none;
 
     &:not(:last-child) {
       margin-right: 10px;
@@ -332,19 +333,19 @@
 .search-article {
   position: relative;
   margin-bottom: 50px;
+  height: 50px;
 
   label[for="search-input"] {
     position: relative;
-    top: 10px;
-    left: 11px;
+    top: 15px;
+    left: 10px;
   }
 
   input[type="search"] {
     top: 0;
     left: 0;
-    border: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     outline: none;
     position: absolute;
     border-radius: 5px;
@@ -352,8 +353,9 @@
     color: $text-base-color;
     -webkit-appearance: none;
     font-size: $base-font-size;
-    background-color: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(128, 128, 128, 0.1);
+    background: none;
+    border: 2px solid $gray;
+
     &::-webkit-input-placeholder {
       color: #808080;
     }
