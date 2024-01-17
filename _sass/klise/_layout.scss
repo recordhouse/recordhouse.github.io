@@ -354,14 +354,16 @@
     -webkit-appearance: none;
     font-size: $base-font-size;
     background: none;
-    border: 2px solid $gray;
-
+    border: 2px solid $light;
     &::-webkit-input-placeholder {
       color: #808080;
     }
     &::-webkit-search-decoration,
     &::-webkit-search-results-decoration {
       display: none;
+    }
+    &:focus {
+      border: 2px solid $gray;
     }
   }
 }
