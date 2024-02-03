@@ -190,8 +190,10 @@
   }
 
   .author-avatar {
-    width: 80px;
-    height: 80px;
+    margin: 0 auto;
+    width: 100px;
+    height: 130px;
+    background: url(../../assets/img/avatar.png) no-repeat 0 0/100px auto;
     user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -200,12 +202,22 @@
     opacity: 1;
   }
 
+  // .author-avatar {
+  //   width: 80px;
+  //   user-select: none;
+  //   -ms-user-select: none;
+  //   -webkit-user-select: none;
+  //   -webkit-animation: 0.5s ease-in forwards fadein;
+  //   animation: 0.5s ease-in forwards fadein;
+  //   opacity: 1;
+  // }
+
   .author-name {
     margin: 1.5rem auto 0;
     font-size: 0;
-    width: 170px;
-    height: 41px;
-    background: url(../../assets/img/title.png) no-repeat 0 0/170px auto;
+    width: 150px;
+    height: 43px;
+    background: url(../../assets/img/title.png) no-repeat 0 0/150px auto;
     // img {
     //   width: 9rem;
     // }

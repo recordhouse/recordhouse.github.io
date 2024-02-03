@@ -247,6 +247,9 @@ body[data-theme="dark"] {
 
   // Customizing
   .author-name {
-    background: url(../../assets/img/title_dark.png) no-repeat 0 0/170px auto;
+    background: url(../../assets/img/title_white.png) no-repeat 0 0/150px auto;
+  }
+  .author-avatar {
+    background: url(../../assets/img/avatar_white.png) no-repeat 0 0/100px auto;
   }
 }
